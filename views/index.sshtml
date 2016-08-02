@@ -1,32 +1,9 @@
 ﻿@Master['master.sshtml']
 
 @Section['Content']
-<!--NAVBAR-->
-<nav class="navbar navbar-default" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="/">SharpPaste</a>
-        </div>
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <button type="button" class="btn btn-success navbar-btn navbar-right" id="newpastenavbutton" aria-label="Left Align">
-                <span class="glyphicon glyphicon-plus"></span>
-                New Paste
-            </button>
-            <!--TODO: Add sharing options-->
-            <!--<ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Share<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Github</a></li>
-                        <li><a href="#">Embed</a></li>
-                    </ul>
-                </li>
-            </ul>-->
-        </div>
-    </div>
-</nav>
+
+@Partial['navbar']
+
 <!--MAIN CONTENT-->
 <div class="container">
     <div class="jumbotron">
@@ -41,7 +18,7 @@
                     <textarea type="text" class="form-control" rows="20" style="resize: vertical;" name="body" id="body" placeholder="The text that you want to paste..."></textarea>
                 </div>
                 <div class="btn-group pull-right" role="group" aria-label="...">
-                    <button type="button" class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-primary" id="addpaste">Save</button>
                     <button type="button" class="btn btn-danger" id="deletepaste" data-toggle="modal" data-target="#confirmdeletemodal">Delete</button>
                 </div>
             </form>
@@ -68,6 +45,7 @@
     </div>
 </div>
 
+<!--MAIN PAGE SCRIPT-->
 <script src="static/custom/index.js"></script>
 
 @EndSection
