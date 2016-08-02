@@ -14,6 +14,5 @@ namespace SharpPaste
 		public string LongId { get; set; }
 		public string Title { get; set; }
 		public string Body { get; set; }
-		public bool Highlighting { get; set; }
 	}
 }

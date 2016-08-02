@@ -51,7 +51,7 @@ namespace SharpPaste
 				}
 			};
 			
-			Post["/paste/add/"] = _ => {
+			Post["/paste/add"] = _ => {
 				var body = this.Request.Body;
 				
 				int length = (int) body.Length;
@@ -59,7 +59,9 @@ namespace SharpPaste
 				
 				body.Read(data, 0, length);
 				
-				Paste decodedPaste = JsonConvert.DeserializeObject<Paste>(Encoding.Default.GetString(data));
+				var decodedPaste = JsonConvert.DeserializeObject<Paste>(Encoding.Default.GetString(data));
+				
+				string longId = PasswordGenerator.Generate(Config.TOKENLENGTH);
 				
 				using(var db = new LiteDatabase(Config.DBPATH))
 				{
@@ -67,16 +69,15 @@ namespace SharpPaste
 					
 					var paste = new Paste
 					{
-						LongId = PasswordGenerator.Generate(23),
+						LongId = longId,
 						Title = decodedPaste.Title,
-						Body = decodedPaste.Body,
-						Highlighting = decodedPaste.Highlighting
+						Body = decodedPaste.Body
 					};
 					
 					pastes.Insert(paste);
 				}
 				
-				return HttpStatusCode.OK;
+				return longId;
 			};
 		}
 	}

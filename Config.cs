@@ -10,6 +10,10 @@ namespace SharpPaste
 {
 	public class Config
 	{
-		public static string DBPATH = string.Format(@"{0}bin\Pastes.db", AppDomain.CurrentDomain.BaseDirectory);
+		///----Application Config----///
+		public static string DBPATH = string.Format(@"{0}Pastes.db", AppDomain.CurrentDomain.BaseDirectory);
+		
+		///----Paste Config----///
+		public static int TOKENLENGTH = 23;
 	}
 }
