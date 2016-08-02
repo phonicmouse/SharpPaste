@@ -1,0 +1,26 @@
+@Master['master.sshtml']
+
+@Section['HeadAddings']
+
+<link rel="stylesheet" type="" href="static/css/highlightstyles/default.css">
+<script src="static/js/highlight.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+@EndSection
+
+@Section['Content']
+
+@Partial['navbar']
+
+<div class="container">
+    <div class="jumbotron">
+        <div class="container">
+            
+        </div>
+    </div>
+</div>
+
+
+@EndSection
