@@ -7,9 +7,9 @@
   <title>SharpPaste</title>
   
   <!-- Local bootstrap CSS & JS -->
-  <link rel="stylesheet" media="screen" href="static/bootstrap.css">
-  <script src="static/jquery.js"></script>
-  <script src="static/bootstrap.js"></script>
+  <link rel="stylesheet" media="screen" href="static/css/bootstrap.css">
+  <script src="static/js/jquery.js"></script>
+  <script src="static/js/bootstrap.js"></script>
 
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>

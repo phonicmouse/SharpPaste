@@ -8,7 +8,10 @@
             <a class="navbar-brand" href="/">SharpPaste</a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <button type="button" class="btn btn-success navbar-btn navbar-right" id="newpastenavbutton">New Paste</button>
+            <button type="button" class="btn btn-success navbar-btn navbar-right" id="newpastenavbutton" aria-label="Left Align">
+                <span class="glyphicon glyphicon-plus"></span>
+                New Paste
+            </button>
             <!--TODO: Add sharing options-->
             <!--<ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
@@ -28,9 +31,38 @@
 <div class="container">
     <div class="jumbotron">
         <div class="container">
-            <div class="btn-group pull-right" role="group" aria-label="...">
-                <button type="button" class="btn btn-lg btn-primary">Save</button>
-                <button type="button" class="btn btn-lg btn-danger">Delete</button>
+            <form>
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" class="form-control" name="title" id="title" placeholder="The paste title...">
+                </div>
+                <div class="form-group">
+                    <label for="body">Paste Text</label>
+                    <textarea type="text" class="form-control" rows="20" style="resize: vertical;" name="body" id="body" placeholder="The text that you want to paste..."></textarea>
+                </div>
+                <div class="btn-group pull-right" role="group" aria-label="...">
+                    <button type="button" class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-danger" id="deletepaste" data-toggle="modal" data-target="#confirmdeletemodal">Delete</button>
+                </div>
+            </form>
+            <!-- Small modal (delete paste confirm) -->
+            <div class="modal fade" id="confirmdeletemodal" tabindex="-1" role="dialog" aria-labelledby="modallabel">
+                <div class="modal-dialog modal-sm" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modallabel">Confirm Delete</h4>
+                        </div>
+                        <div class="modal-body">
+                            Are you sure that you want to delete? 
+                            <br> 
+                            This action is not reversible.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal" id="confirmdeletepaste">Delete</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
