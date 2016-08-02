@@ -1,14 +1,14 @@
 ﻿@Master['master.sshtml']
 
 @Section['Content']
-
+<!--NAVBAR-->
 <nav class="navbar navbar-default" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="/">Sharp Paste</a>
+            <a class="navbar-brand" href="/">SharpPaste</a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <button type="button" class="btn btn-success navbar-btn" id="newpastenavbutton">New Paste</button>
+            <button type="button" class="btn btn-success navbar-btn navbar-right" id="newpastenavbutton">New Paste</button>
             <!--TODO: Add sharing options-->
             <!--<ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
@@ -24,6 +24,17 @@
         </div>
     </div>
 </nav>
+<!--MAIN CONTENT-->
+<div class="container">
+    <div class="jumbotron">
+        <div class="container">
+            <div class="btn-group pull-right" role="group" aria-label="...">
+                <button type="button" class="btn btn-lg btn-primary">Save</button>
+                <button type="button" class="btn btn-lg btn-danger">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="static/custom/index.js"></script>
 
