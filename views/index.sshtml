@@ -22,12 +22,30 @@
                     <button type="button" class="btn btn-danger" id="deletepaste" data-toggle="modal" data-target="#confirmdeletemodal">Delete</button>
                 </div>
             </form>
-            <!-- Small modal (delete paste confirm) -->
-            <div class="modal fade" id="confirmdeletemodal" tabindex="-1" role="dialog" aria-labelledby="modallabel">
+            <!-- Add paste error modal -->
+            <div class="modal fade" id="pasteerrormodal" tabindex="-1" role="dialog" aria-labelledby="addpastemodallabel">
                 <div class="modal-dialog modal-sm" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title" id="modallabel">Confirm Delete</h4>
+                            <h4 class="modal-title" id="addpastemodallabel">Paste Error</h4>
+                        </div>
+                        <div class="modal-body">
+                            You can't leave the paste empty!
+                            <br>
+                            Fill the form and retry.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Delete paste confirm modal -->
+            <div class="modal fade" id="confirmdeletemodal" tabindex="-1" role="dialog" aria-labelledby="confirmmodallabel">
+                <div class="modal-dialog modal-sm" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="confirmmodallabel">Confirm Delete</h4>
                         </div>
                         <div class="modal-body">
                             Are you sure that you want to delete? 

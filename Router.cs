@@ -18,9 +18,7 @@ namespace SharpPaste
 	{
 		public Router()
 		{
-			Get["/"] = _ => {
-				return View["index"];
-			};
+			Get["/"] = _ => View["index"];
 			
 			Get["/paste/{longId}"] = parameters => {
 				string longId = parameters.longId;
