@@ -71,7 +71,8 @@ namespace SharpPaste
 					{
 						LongId = longId,
 						Title = decodedPaste.Title,
-						Body = decodedPaste.Body
+						Body = decodedPaste.Body,
+						Language = decodedPaste.Language
 					};
 					
 					pastes.Insert(paste);

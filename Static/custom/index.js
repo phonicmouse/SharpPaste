@@ -5,21 +5,17 @@ $("#confirmdeletepaste").click(function () {
 
 $("#addpaste").click(function () {
     if ($.trim($("#body").val())) {
-        var data = new String();
+        var paste = {};
         if ($.trim($("#title").val())) {
-            var paste = {
-                title: $("#title").val(),
-                body: $("#body").val()
-            };
-            data = JSON.stringify(paste);
+            paste.title = window.btoa($("#title").val());
         } else {
-            var untitledPaste = {
-                title: "Untitled",
-                body: $("#body").val()
-            }
-            data = JSON.stringify(untitledPaste);
+            paste.title = window.btoa("Untitled");
         }
+        paste.body = window.btoa($("#body").val());
+        paste.language = $("#languageSelection option:selected").val();
         var postUrl = location.origin + "/paste/add";
+        var data = JSON.stringify(paste);
+        console.log("JSON:", data);
         $.post(postUrl, data, function (responseData) {
             var pasteToken = new String(responseData);
             window.location = location.origin + "/paste/" + pasteToken;
