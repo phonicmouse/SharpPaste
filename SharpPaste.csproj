@@ -84,37 +84,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Content\bootstrap-flat-extras.css" />
-    <None Include="Content\bootstrap-flat-extras.min.css" />
-    <None Include="Content\bootstrap-flat.css" />
-    <None Include="Content\bootstrap-flat.min.css" />
-    <None Include="Content\bootstrap-theme.css" />
-    <None Include="Content\bootstrap-theme.css.map" />
-    <None Include="Content\bootstrap-theme.min.css" />
-    <None Include="Content\bootstrap.css" />
-    <None Include="Content\bootstrap.css.map" />
-    <None Include="Content\bootstrap.min.css" />
     <None Include="Custom\css\prism.css" />
     <None Include="Custom\js\index.js" />
     <None Include="Custom\js\navbar.js" />
     <None Include="Custom\js\prism.js" />
-    <None Include="fonts\glyphicons-halflings-regular.eot" />
-    <None Include="fonts\glyphicons-halflings-regular.svg" />
-    <None Include="fonts\glyphicons-halflings-regular.ttf" />
-    <None Include="fonts\glyphicons-halflings-regular.woff" />
-    <None Include="fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Icon.png" />
     <None Include="packages.config" />
-    <None Include="Scripts\bootstrap.js" />
-    <None Include="Scripts\bootstrap.min.js" />
-    <None Include="Scripts\jquery-3.1.1-vsdoc.js" />
-    <None Include="Scripts\jquery-3.1.1.js" />
-    <None Include="Scripts\jquery-3.1.1.min.js" />
-    <None Include="Scripts\jquery-3.1.1.min.map" />
-    <None Include="Scripts\jquery-3.1.1.slim.js" />
-    <None Include="Scripts\jquery-3.1.1.slim.min.js" />
-    <None Include="Scripts\jquery-3.1.1.slim.min.map" />
-    <None Include="Scripts\npm.js" />
     <None Include="views\index.sshtml" />
     <None Include="views\master.sshtml" />
     <None Include="Views\navbar.sshtml" />
