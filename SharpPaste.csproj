@@ -60,20 +60,11 @@
     <Reference Include="Nancy">
       <HintPath>packages\Nancy.1.4.3\lib\net40\Nancy.dll</HintPath>
     </Reference>
-    <Reference Include="Nancy.Bootstrappers.StructureMap">
-      <HintPath>packages\Nancy.Bootstrappers.StructureMap.1.4.3\lib\net45\Nancy.Bootstrappers.StructureMap.dll</HintPath>
-    </Reference>
     <Reference Include="Nancy.Hosting.Aspnet">
       <HintPath>packages\Nancy.Hosting.Aspnet.1.4.1\lib\net40\Nancy.Hosting.Aspnet.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="StructureMap">
-      <HintPath>packages\structuremap.4.0.1.318\lib\net40\StructureMap.dll</HintPath>
-    </Reference>
-    <Reference Include="StructureMap.Net4">
-      <HintPath>packages\structuremap.4.0.1.318\lib\net40\StructureMap.Net4.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -103,6 +94,8 @@
     <None Include="Content\bootstrap.css" />
     <None Include="Content\bootstrap.css.map" />
     <None Include="Content\bootstrap.min.css" />
+    <None Include="Custom\js\index.js" />
+    <None Include="Custom\js\navbar.js" />
     <None Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="fonts\glyphicons-halflings-regular.svg" />
     <None Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -112,8 +105,6 @@
     <None Include="packages.config" />
     <None Include="Scripts\bootstrap.js" />
     <None Include="Scripts\bootstrap.min.js" />
-    <None Include="Scripts\Custom\index.js" />
-    <None Include="Scripts\Custom\navbar.js" />
     <None Include="Scripts\jquery-3.1.1-vsdoc.js" />
     <None Include="Scripts\jquery-3.1.1.js" />
     <None Include="Scripts\jquery-3.1.1.min.js" />
@@ -135,10 +126,11 @@
     <Compile Include="routers\Router.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Custom\js" />
     <Folder Include="Models" />
     <Folder Include="bootstrappers" />
+    <Folder Include="Custom" />
     <Folder Include="routers" />
-    <Folder Include="Scripts\Custom" />
     <Folder Include="views" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
@@ -153,8 +145,7 @@
           <IISUrl>http://localhost:8080/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
+          <CustomServerUrl></CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>

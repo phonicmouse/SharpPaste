@@ -17,6 +17,7 @@ namespace SharpPaste
 			nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("/css", @"Content"));
 			nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("/fonts", @"Fonts"));
 			nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("/js", @"Scripts"));
+			nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("/custom", @"Custom"));
 			base.ConfigureConventions(nancyConventions);
 		}
 	}

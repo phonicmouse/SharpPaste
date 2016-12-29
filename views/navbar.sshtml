@@ -25,4 +25,5 @@
     </div>
 </nav>
 
-<script src="static/custom/navbar.js"></script>
+<!-- Navbar Custom Script -->
+<script src="custom/js/navbar.js"></script>

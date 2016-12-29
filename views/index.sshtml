@@ -38,12 +38,12 @@ SharpPaste
                     <button type="button" class="btn btn-danger" id="deletepaste" data-toggle="modal" data-target="#confirmdeletemodal">Delete</button>
                 </div>
             </form>
-            <!-- Add paste error modal -->
+            <!-- Add paste creation error modal -->
             <div class="modal fade" id="pasteerrormodal" tabindex="-1" role="dialog" aria-labelledby="addpastemodallabel">
                 <div class="modal-dialog modal-sm" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title" id="addpastemodallabel">Paste Error</h4>
+                            <h4 class="modal-title" id="addpastemodallabel">Paste Creation Error</h4>
                         </div>
                         <div class="modal-body">
                             You can't leave the paste empty!
@@ -79,7 +79,7 @@ SharpPaste
     </div>
 </div>
 
-<!--MAIN PAGE SCRIPT-->
-<script src="static/custom/index.js"></script>
+<!--Main Page Custom Script-->
+<script src="custom/js/index.js"></script>
 
 @EndSection

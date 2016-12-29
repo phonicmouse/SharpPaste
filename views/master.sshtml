@@ -6,7 +6,7 @@
 
     <title>SharpPaste</title>
   
-    <!-- Local bootstrap CSS -->
+    <!-- Local Bootstrap CSS -->
     <link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
     <link rel="stylesheet" media="screen" href="css/bootstrap-flat.min.css">
 
@@ -22,8 +22,8 @@
   </head>
   <body>
     @Section['Content']
-  
-    <!-- jQuery at the end of the page to fast load -->
+    
+    <!-- Local Bootstrap and jQuery JS -->
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
