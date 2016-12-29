@@ -56,12 +56,12 @@ SharpPaste
                     </div>
                 </div>
             </div>
-            <!-- Delete paste confirm modal -->
+            <!-- Paste deletion confirmation modal -->
             <div class="modal fade" id="confirmdeletemodal" tabindex="-1" role="dialog" aria-labelledby="confirmmodallabel">
                 <div class="modal-dialog modal-sm" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title" id="confirmmodallabel">Confirm Delete</h4>
+                            <h4 class="modal-title" id="confirmmodallabel">Confirm Deletion</h4>
                         </div>
                         <div class="modal-body">
                             Are you sure that you want to delete? 
