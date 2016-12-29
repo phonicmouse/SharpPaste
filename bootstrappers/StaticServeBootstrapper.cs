@@ -14,8 +14,9 @@ namespace SharpPaste
 	{
 		protected override void ConfigureConventions(NancyConventions nancyConventions)
 		{
-			nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("/static", @"static"));
-			nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("/paste/static", @"static"));
+			nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("/css", @"Content"));
+			nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("/fonts", @"Fonts"));
+			nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("/js", @"Scripts"));
 			base.ConfigureConventions(nancyConventions);
 		}
 	}

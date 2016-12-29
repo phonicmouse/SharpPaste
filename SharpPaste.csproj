@@ -93,12 +93,37 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Content\bootstrap-flat-extras.css" />
+    <None Include="Content\bootstrap-flat-extras.min.css" />
+    <None Include="Content\bootstrap-flat.css" />
+    <None Include="Content\bootstrap-flat.min.css" />
+    <None Include="Content\bootstrap-theme.css" />
+    <None Include="Content\bootstrap-theme.css.map" />
+    <None Include="Content\bootstrap-theme.min.css" />
+    <None Include="Content\bootstrap.css" />
+    <None Include="Content\bootstrap.css.map" />
+    <None Include="Content\bootstrap.min.css" />
+    <None Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="fonts\glyphicons-halflings-regular.svg" />
+    <None Include="fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="fonts\glyphicons-halflings-regular.woff" />
+    <None Include="fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Icon.png" />
     <None Include="packages.config" />
-    <None Include="Static\bootstrap.css" />
-    <None Include="Static\bootstrap.js" />
-    <None Include="Static\jquery.js" />
+    <None Include="Scripts\bootstrap.js" />
+    <None Include="Scripts\bootstrap.min.js" />
+    <None Include="Scripts\jquery-3.1.1-vsdoc.js" />
+    <None Include="Scripts\jquery-3.1.1.js" />
+    <None Include="Scripts\jquery-3.1.1.min.js" />
+    <None Include="Scripts\jquery-3.1.1.min.map" />
+    <None Include="Scripts\jquery-3.1.1.slim.js" />
+    <None Include="Scripts\jquery-3.1.1.slim.min.js" />
+    <None Include="Scripts\jquery-3.1.1.slim.min.map" />
+    <None Include="Scripts\npm.js" />
     <None Include="views\index.sshtml" />
     <None Include="views\master.sshtml" />
+    <None Include="Views\navbar.sshtml" />
+    <None Include="Views\paste.sshtml" />
     <None Include="web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -111,7 +136,6 @@
     <Folder Include="Models" />
     <Folder Include="bootstrappers" />
     <Folder Include="routers" />
-    <Folder Include="Static" />
     <Folder Include="views" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
@@ -126,7 +150,8 @@
           <IISUrl>http://localhost:8080/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl></CustomServerUrl>
+          <CustomServerUrl>
+          </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>

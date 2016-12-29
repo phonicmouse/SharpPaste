@@ -1,23 +1,30 @@
 ﻿<!doctype html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
 
-  <title>SharpPaste</title>
+    <title>SharpPaste</title>
   
-  <!-- Local bootstrap CSS & JS -->
-  <link rel="stylesheet" media="screen" href="static/css/bootstrap.css">
-  <script src="static/js/jquery.js"></script>
-  <script src="static/js/bootstrap.js"></script>
+    <!-- Local bootstrap CSS -->
+    <link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
+    <link rel="stylesheet" media="screen" href="css/bootstrap-flat.min.css">
 
-  <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-  @Section['HeadAddings']
-</head>
-
-<body>
-  @Section['Content']
-</body>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// and also if you test it offline -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Template section to add things to head for single pages (Optional) -->
+    @Section['HeadAddings']
+  </head>
+  <body>
+    @Section['Content']
+  
+    <!-- jQuery at the end of the page to fast load -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
