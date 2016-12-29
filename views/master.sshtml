@@ -7,8 +7,12 @@
     <title>SharpPaste</title>
   
     <!-- Local Bootstrap CSS -->
-    <link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
-    <link rel="stylesheet" media="screen" href="css/bootstrap-flat.min.css">
+    <link rel="stylesheet" media="screen" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" media="screen" href="/css/bootstrap-flat.min.css">
+    
+    <!-- Local Bootstrap and jQuery JS -->
+    <script src="/js/jquery-3.1.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// and also if you test it offline -->
@@ -22,9 +26,5 @@
   </head>
   <body>
     @Section['Content']
-    
-    <!-- Local Bootstrap and jQuery JS -->
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -80,6 +80,6 @@ SharpPaste
 </div>
 
 <!--Main Page Custom Script-->
-<script src="custom/js/index.js"></script>
+<script src="/custom/js/index.js"></script>
 
 @EndSection

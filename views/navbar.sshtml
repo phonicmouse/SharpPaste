@@ -26,4 +26,4 @@
 </nav>
 
 <!-- Navbar Custom Script -->
-<script src="custom/js/navbar.js"></script>
+<script src="/custom/js/navbar.js"></script>

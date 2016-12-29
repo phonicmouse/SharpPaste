@@ -127,6 +127,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Custom\js" />
+    <Folder Include="Custom\css" />
     <Folder Include="Models" />
     <Folder Include="bootstrappers" />
     <Folder Include="Custom" />
