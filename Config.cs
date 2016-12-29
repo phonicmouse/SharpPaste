@@ -11,8 +11,8 @@ namespace SharpPaste
 	public class Config
 	{
 		///----Application Config----///
-		//public static string DBPATH = string.Format(@"{0}db\Pastes.db", AppDomain.CurrentDomain.BaseDirectory);
-		public static string DBPATH = @"C:\Users\Leonardo\Documents\GitHub\SharpPaste\bin\Pastes.db";
+		public static string DBPATH = string.Format(@"{0}db\Pastes.db", AppDomain.CurrentDomain.BaseDirectory);
+		//public static string DBPATH = @"C:\Users\Leonardo\Documents\GitHub\SharpPaste\bin\Pastes.db";
 		
 		///----Paste Config----///
 		public static int TOKENLENGTH = 23;
