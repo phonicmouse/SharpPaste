@@ -163,6 +163,10 @@ PublishScripts/
 *.nuget.props
 *.nuget.targets
 
+#Web Assets Folders
+[Cc]ontent/
+[Ss]cripts/
+
 # Microsoft Azure Build Output
 csx/
 *.build.csdef
