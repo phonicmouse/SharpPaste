@@ -112,6 +112,8 @@
     <None Include="packages.config" />
     <None Include="Scripts\bootstrap.js" />
     <None Include="Scripts\bootstrap.min.js" />
+    <None Include="Scripts\Custom\index.js" />
+    <None Include="Scripts\Custom\navbar.js" />
     <None Include="Scripts\jquery-3.1.1-vsdoc.js" />
     <None Include="Scripts\jquery-3.1.1.js" />
     <None Include="Scripts\jquery-3.1.1.min.js" />
@@ -136,6 +138,7 @@
     <Folder Include="Models" />
     <Folder Include="bootstrappers" />
     <Folder Include="routers" />
+    <Folder Include="Scripts\Custom" />
     <Folder Include="views" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
