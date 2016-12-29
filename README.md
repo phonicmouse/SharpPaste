@@ -3,3 +3,9 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/phonicmouse/SharpPaste/master/LICENSE)
 
 A simple and Open-Source C# ASP.NET/NancyFX pastebin, made with :heart: in Italy :it:.
+
+## Software Used
+* NancyFX
+* Bootstrap
+* Bootstrap Flat Theme
+* jQuery
