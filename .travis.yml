@@ -2,6 +2,7 @@ solution: SharpPaste.sln
 language: csharp
 mono:
  - latest
+ - 4.6.2
  - 4.4.2
  - 4.2.3
  - 4.0.5
