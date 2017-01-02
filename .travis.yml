@@ -1,2 +1,12 @@
-language: csharp
 solution: SharpPaste.sln
+language: csharp
+mono:
+ - latest
+ - 4.4.2
+ - 4.2.3
+ - 4.0.5
+ - 3.12.1
+ - 2.10.9
+os:
+ - linux
+ - osx
