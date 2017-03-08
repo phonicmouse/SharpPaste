@@ -1,14 +1,12 @@
+os: linux
 language: csharp
 solution: SharpPaste.sln
-sudo: required
 mono:
  - latest
  - 4.8.0
  - 4.6.2
  - 4.4.2
-os:
- - linux
- - osx
+sudo: required
 before_install:
  - sudo apt-get clean
  - sudo apt-get update
