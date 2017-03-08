@@ -90,26 +90,26 @@
     <None Include="Custom\js\prism.js" />
     <None Include="Icon.png" />
     <None Include="packages.config" />
-    <None Include="views\index.sshtml" />
-    <None Include="views\master.sshtml" />
+    <None Include="Views\index.sshtml" />
+    <None Include="Views\master.sshtml" />
     <None Include="Views\navbar.sshtml" />
     <None Include="Views\paste.sshtml" />
     <None Include="web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="bootstrappers\StaticServeBootstrapper.cs" />
+    <Compile Include="Bootstrappers\StaticServeBootstrapper.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="Models\Paste.cs" />
-    <Compile Include="routers\Router.cs" />
+    <Compile Include="Routers\Router.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Custom\js" />
     <Folder Include="Custom\css" />
     <Folder Include="Models" />
-    <Folder Include="bootstrappers" />
+    <Folder Include="Bootstrappers" />
     <Folder Include="Custom" />
-    <Folder Include="routers" />
-    <Folder Include="views" />
+    <Folder Include="Routers" />
+    <Folder Include="Views" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
