@@ -1,5 +1,8 @@
 solution: SharpPaste.sln
 language: csharp
+before_install:
+ - apt update
+ - rm -rf ./phonicmouse/SharpPaste
 mono:
  - latest
  - 4.6.2
