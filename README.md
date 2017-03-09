@@ -9,3 +9,6 @@ A simple and Open-Source C# ASP.NET/NancyFX pastebin, made with :heart: in Italy
 * Bootstrap
 * Bootstrap Flat Theme
 * jQuery
+
+##Installation
+
