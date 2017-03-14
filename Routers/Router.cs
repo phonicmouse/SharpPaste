@@ -82,6 +82,10 @@ namespace SharpPaste
 				
 				return longId;
 			};
+			
+			Post["/paste/delete"] = _ => {
+				return 0; // WIP
+			};
 		}
 	}
 }
