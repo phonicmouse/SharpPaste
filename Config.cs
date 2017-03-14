@@ -11,6 +11,7 @@ namespace SharpPaste
 	public class Config
 	{
 		///----Application Config----///
+		public static string HOSTINGTYPE = "ASP.NET";
 		public static string DBPATH = string.Format(@"{0}db\Pastes.db", AppDomain.CurrentDomain.BaseDirectory);
 		
 		///----Paste Config----///
