@@ -5,10 +5,11 @@
 A simple and Open-Source C# ASP.NET/NancyFX pastebin, made with :heart: in Italy :it:.
 
 ## Software Used
-* NancyFX
-* Bootstrap
-* Bootstrap Flat Theme
-* jQuery
+* NancyFX - Web Framework
+* Bootstrap - UI Framework
+* Bootstrap Flat Theme - UI Theme
+* jQuery - DOM Framework
+* Prism (JS & CSS) - Syntax Highlighter
 
-##Installation
+## Installation
 
