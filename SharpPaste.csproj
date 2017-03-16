@@ -83,18 +83,12 @@
     <None Include="Custom\js\index.js" />
     <None Include="Custom\js\navbar.js" />
     <None Include="Custom\js\prism.js" />
-    <None Include="Icon.png" />
     <None Include="packages.config" />
     <None Include="Views\index.sshtml" />
     <None Include="Views\master.sshtml" />
     <None Include="Views\navbar.sshtml" />
     <None Include="Views\paste.sshtml" />
     <None Include="web.config" />
-    <None Include="fonts\glyphicons-halflings-regular.woff2" />
-    <None Include="Content\bootstrap.min.css.map" />
-    <None Include="Content\bootstrap.css.map" />
-    <None Include="Content\bootstrap-theme.min.css.map" />
-    <None Include="Content\bootstrap-theme.css.map" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bootstrappers\StaticServeBootstrapper.cs" />
@@ -110,18 +104,6 @@
     <Folder Include="Custom" />
     <Folder Include="Routers" />
     <Folder Include="Views" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap-theme.min.css" />
-    <Content Include="Content\bootstrap-theme.css" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
