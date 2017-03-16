@@ -20,7 +20,6 @@
     <SourceAnalysisOverrideSettingsFile>C:\Users\Phonic Mouse\AppData\Roaming\ICSharpCode\SharpDevelop5\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
     <TargetFrameworkProfile />
     <SignAssembly>False</SignAssembly>
-    <DelaySign>False</DelaySign>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -48,14 +47,7 @@
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="LiteDB">
-      <HintPath>packages\LiteDB.2.0.0\lib\net35\LiteDB.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp">
-      <RequiredTargetFramework>4.0</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="MlkPwgen">
-      <HintPath>packages\MlkPwgen.0.2.0.0\lib\net45\MlkPwgen.dll</HintPath>
     </Reference>
     <Reference Include="Nancy">
       <HintPath>packages\Nancy.1.4.3\lib\net40\Nancy.dll</HintPath>
@@ -68,11 +60,9 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Drawing" />
     <Reference Include="System.Linq" />
@@ -80,7 +70,12 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="LiteDB">
+      <HintPath>packages\LiteDB.3.1.0\lib\net35\LiteDB.dll</HintPath>
+    </Reference>
+    <Reference Include="MlkPwgen">
+      <HintPath>packages\MlkPwgen.0.3.0\lib\net45\MlkPwgen.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -95,6 +90,11 @@
     <None Include="Views\navbar.sshtml" />
     <None Include="Views\paste.sshtml" />
     <None Include="web.config" />
+    <None Include="fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Content\bootstrap.min.css.map" />
+    <None Include="Content\bootstrap.css.map" />
+    <None Include="Content\bootstrap-theme.min.css.map" />
+    <None Include="Content\bootstrap-theme.css.map" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bootstrappers\StaticServeBootstrapper.cs" />
@@ -110,6 +110,18 @@
     <Folder Include="Custom" />
     <Folder Include="Routers" />
     <Folder Include="Views" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap-theme.css" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
@@ -128,5 +140,10 @@
         </WebProjectProperties>
       </FlavorProperties>
     </VisualStudio>
+    <MonoDevelop>
+      <Properties>
+        <XspParameters Port="8080" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="True" />
+      </Properties>
+    </MonoDevelop>
   </ProjectExtensions>
 </Project>
