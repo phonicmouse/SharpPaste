@@ -4,9 +4,8 @@
  * Date: 02/08/2016
  * Time: 17:32
  */
-using Nancy
-using Nancy.Conventions
-
+using Nancy;
+using Nancy.Conventions;
 namespace SharpPaste
 {
 	public class StaticServeBootstrapper : DefaultNancyBootstrapper
