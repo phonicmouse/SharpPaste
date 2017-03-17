@@ -17,10 +17,19 @@ A simple and Open-Source C# ASP.NET/NancyFX pastebin, made with :heart: in Italy
 TODO
 
 #### Linux
-To run **SharpPaste** on **Linux** you'll need:
-* **Mono** (see [CI](https://travis-ci.org/phonicmouse/SharpPaste) for a full list of supported versions)
-* **XSP** ( [latest](https://github.com/mono/xsp/blob/master/INSTALL) version should be ok)
+**Dependencies:**
+* Mono (see [CI](https://travis-ci.org/phonicmouse/SharpPaste) for a full list of supported versions)
+* XSP ( [latest](https://github.com/mono/xsp) version should be ok)
 
+
+**Step:**
+1. Install [mono](http://www.mono-project.com/docs/getting-started/install/linux/)
+2. Install [XSP](https://github.com/mono/xsp/blob/master/INSTALL)
+3. Clone SharpPaste repository ```git clone https://github.com/phonicmouse/SharpPaste.git```
+4. Enter repo's directory ```cd SharpPaste```
+5. Build Solution ```xbuild SharpPaste.sln```
+6. Start XSP Web Server ```xsp``` or ```xsp4``` if you get errors with the first one
+7. Done. Enjoy!
 
 #### OSX
 TODO
