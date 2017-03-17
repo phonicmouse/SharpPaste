@@ -6,6 +6,7 @@ A simple and Open-Source C# ASP.NET/NancyFX pastebin, made with :heart: in Italy
 
 ## Software Used
 * NancyFX - Web Framework
+* LiteDB - Embedded Database
 * Bootstrap - UI Framework
 * Bootstrap Flat Theme - UI Theme
 * jQuery - DOM Framework
@@ -13,3 +14,4 @@ A simple and Open-Source C# ASP.NET/NancyFX pastebin, made with :heart: in Italy
 
 ## Installation
 
+#### Windows
