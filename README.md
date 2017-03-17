@@ -13,5 +13,14 @@ A simple and Open-Source C# ASP.NET/NancyFX pastebin, made with :heart: in Italy
 * Prism (JS & CSS) - Syntax Highlighter
 
 ## Installation
-
 #### Windows
+TODO
+
+#### Linux
+To run **SharpPaste** on **Linux** you'll need:
+* **Mono** (see [CI](https://travis-ci.org/phonicmouse/SharpPaste) for a full list of supported versions)
+* **XSP** ( [latest](https://github.com/mono/xsp/blob/master/INSTALL) version should be ok)
+
+
+#### OSX
+TODO
