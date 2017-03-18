@@ -37,9 +37,12 @@ TODO
 ## Specifics
 
 #### Supported Mono Versions
+See [CI](https://travis-ci.org/phonicmouse/SharpPaste) for more details.
+
 | Version        | Supported          |
 |:--------------:|:------------------:|
-| latest (4.8.x) | :white_check_mark: |
+| latest (5.0.0) | :interrobang:      |
+| stable (4.8.x) | :white_check_mark: |
 | 4.8.0          | :white_check_mark: |
 | 4.6.2          | :white_check_mark: |
 | 4.4.2          | :white_check_mark: |
