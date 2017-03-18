@@ -22,7 +22,7 @@ TODO
 * XSP ( [latest](https://github.com/mono/xsp) version should be ok)
 
 
-**Step:**
+**Instructions:**
 1. Install [mono](http://www.mono-project.com/docs/getting-started/install/linux/)
 2. Install [XSP](https://github.com/mono/xsp/blob/master/INSTALL)
 3. Clone SharpPaste repository ```git clone https://github.com/phonicmouse/SharpPaste.git```
@@ -37,7 +37,13 @@ TODO
 ## Specifics
 
 #### Package Versions
-| Package Name     | Version |
-|------------------|:-------:|
-| Bootstrap        | 3.3.7   |
-| Bootstrap Flat   | 3.3.4   |
+| Package Name         | Version |
+|----------------------|:-------:|
+| Bootstrap            | 3.3.7   |
+| Bootstrap Flat       | 3.3.4   |
+| jQuery               | 3.1.1   |
+| LiteDB               | 3.1.0   |
+| MlkPwgen             | 0.3.0   |
+| Nancy                | 1.4.3   |
+| Nancy.Hosting.Aspnet | 1.4.1   |
+| Newtonsoft.Json      | 9.0.1   |
