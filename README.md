@@ -36,18 +36,27 @@ TODO
 
 ## Specifics
 
-#### Mono Versions
-| Version        | Supported |
-|:--------------:|:---------:|
+#### Supported Mono Versions
+| Version        | Supported          |
+|:--------------:|:------------------:|
 | latest (4.8.x) | :white_check_mark: |
+| 4.8.0          | :white_check_mark: |
+| 4.6.2          | :white_check_mark: |
+| 4.4.2          | :white_check_mark: |
+| 4.2.x          | :x:                |
+| 4.0.x          | :x:                |
+| 3.x.x          | :x:                |
+| 2.x.x          | :x:                |
+| 1.x.x          | :x:                |
+
 #### Package Versions
-| Package Name         | Version |
-|----------------------|:-------:|
-| Bootstrap            | 3.3.7   |
-| Bootstrap Flat       | 3.3.4   |
-| jQuery               | 3.1.1   |
-| LiteDB               | 3.1.0   |
-| MlkPwgen             | 0.3.0   |
-| Nancy                | 1.4.3   |
-| Nancy.Hosting.Aspnet | 1.4.1   |
+| Package Name         | Current Version |
+|----------------------|:---------------:|
+| Bootstrap            | 3.3.7           |
+| Bootstrap Flat       | 3.3.4           |
+| jQuery               | 3.1.1           |
+| LiteDB               | 3.1.0           |
+| MlkPwgen             | 0.3.0           |
+| Nancy                | 1.4.3           |
+| Nancy.Hosting.Aspnet | 1.4.1           |
 | Newtonsoft.Json      | 9.0.1   |
