@@ -33,3 +33,11 @@ TODO
 
 #### OSX
 TODO
+
+## Specifics
+
+#### Package Versions
+| Package Name     | Version |
+|------------------|:-------:|
+| Bootstrap        | 3.3.7   |
+| Bootstrap Flat   | 3.3.4   |
