@@ -36,8 +36,10 @@ namespace SharpPaste
 				using(var db = new LiteDatabase(Config.DBPATH))
 				{
 					var result = db.GetCollection<Paste>("pastes").FindOne(Query.EQ("LongId", longId));
+					var encodedBytes = Convert.FromBase64String(result.Body);
+					var decodedString = Encoding.UTF8.GetString(encodedBytes);
 					
-					return result.Body;
+					return decodedString;
 				}
 			};
 			
@@ -79,6 +81,10 @@ namespace SharpPaste
 				}
 				
 				return longId;
+			};
+			
+			Post["/paste/delete"] = _ => {
+				return 0; // WIP
 			};
 		}
 	}

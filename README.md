@@ -34,7 +34,6 @@ A simple and Open-Source C# ASP.NET/NancyFX pastebin, made with :heart: in Italy
 ## Specifics
 
 #### Supported Mono Versions
-See [CI](https://travis-ci.org/phonicmouse/SharpPaste) for more details.
 
 | Version        | Supported          |
 |:--------------:|:------------------:|
@@ -48,6 +47,8 @@ See [CI](https://travis-ci.org/phonicmouse/SharpPaste) for more details.
 | 3.x.x          | :x:                |
 | 2.x.x          | :x:                |
 | 1.x.x          | :x:                |
+
+See [CI](https://travis-ci.org/phonicmouse/SharpPaste) for more details.
 
 #### Package Versions
 | Package Name         | Current Version | Previous Version(s)     |

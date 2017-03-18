@@ -11,18 +11,18 @@
 @Partial['navbar']
 
 <div class="container">
-    <div class="container">
-        <div class="page-header">
-            <h2 id="title"></h2>
-        </div>
-        <pre><code class="language-@Model.Language line-numbers" id="body"></code></pre>
+    <div class="page-header">
+        <h2 id="title"></h2>
     </div>
+    <pre><code class="language-@Model.Language line-numbers" id="body"></code></pre>
+    <a class="btn btn-link center-block" id="view-raw">View Raw</a>
 </div>
 
 <script>
     document.title = "SharpPaste" + " - " + window.atob("@Model.Title");
     $("#title").text(window.atob("@Model.Title"));
     $("#body").text(window.atob("@Model.Body"));
+    $("#view-raw").attr("href", window.location + "/raw");
 </script>
 
 <script src="/custom/js/prism.js"></script>
