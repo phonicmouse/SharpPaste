@@ -18,7 +18,7 @@ TODO
 
 #### Linux
 **Dependencies:**
-* Mono (see [Supported Mono Versions](https://github.com/phonicmouse/SharpPaste/tree/installation-instructions#supported-mono-versions) for a full list of supported versions)
+* Mono (see [Supported Mono Versions](#supported-mono-versions) for a full list of supported versions)
 * XSP ( [latest](https://github.com/mono/xsp) version should be ok)
 
 
