@@ -5,6 +5,8 @@
 A simple and Open-Source C# ASP.NET/NancyFX pastebin, made with :heart: in Italy :it:.
 
 ## Software Used
+* Mono - C# Cross-Platform Compiler
+* XSP - Cross-Platform ASP.NET Server
 * NancyFX - Web Framework
 * LiteDB - Embedded Database
 * Bootstrap - UI Framework
@@ -13,10 +15,8 @@ A simple and Open-Source C# ASP.NET/NancyFX pastebin, made with :heart: in Italy
 * Prism (JS & CSS) - Syntax Highlighter
 
 ## Installation
-#### Windows
-TODO
 
-#### Linux
+### Linux
 **Dependencies:**
 * Mono (see [Supported Mono Versions](#supported-mono-versions) for a full list of supported versions)
 * XSP ( [latest](https://github.com/mono/xsp) version should be ok)
@@ -30,9 +30,6 @@ TODO
 5. Build Solution ```xbuild SharpPaste.sln```
 6. Start XSP Web Server ```xsp``` or ```xsp4``` if you get errors with the first one
 7. Done. Enjoy!
-
-#### OSX
-TODO
 
 ## Specifics
 
