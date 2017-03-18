@@ -36,6 +36,10 @@ TODO
 
 ## Specifics
 
+#### Mono Versions
+| Version        | Supported |
+|:--------------:|:---------:|
+| latest (4.8.x) | :white_check_mark: |
 #### Package Versions
 | Package Name         | Version |
 |----------------------|:-------:|
