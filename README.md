@@ -60,4 +60,5 @@ See [CI](https://travis-ci.org/phonicmouse/SharpPaste) for more details.
 | MlkPwgen                | 0.3.0           | 0.2.0                   |
 | Nancy                   | 1.4.3           | 1.4.3                   |
 | Nancy Hosting (ASP.NET) | 1.4.1           | 1.4.1                   |
+| Nancy Hosting (Self)    | -----           | -----                   |
 | Newtonsoft.Json         | 9.0.1           | 9.0.1                   |
