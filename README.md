@@ -28,7 +28,7 @@ A simple and Open-Source C# ASP.NET/NancyFX pastebin, made with :heart: in Italy
 3. Clone SharpPaste repository ```git clone https://github.com/phonicmouse/SharpPaste.git```
 4. Enter repo's directory ```cd SharpPaste```
 5. Build Solution ```xbuild SharpPaste.sln```
-6. Start XSP Web Server ```xsp``` or ```xsp4``` if you get errors with the first one
+6. Start [XSP Web Server](http://www.mono-project.com/docs/web/aspnet/#aspnet-hosting-with-xsp) ```xsp``` or ```xsp4``` if you get errors with the first one
 7. Done. Enjoy!
 
 ## Specifics
