@@ -29,7 +29,7 @@ A simple and Open-Source C# ASP.NET/NancyFX pastebin, made with :heart: in Italy
 4. Enter repo's directory ```cd SharpPaste```
 5. Build Solution ```xbuild SharpPaste.sln```
 6. Start [XSP Web Server](http://www.mono-project.com/docs/web/aspnet/#aspnet-hosting-with-xsp) ```xsp``` or ```xsp4``` if you get errors with the first one
-7. Done. Enjoy!
+7. Done. Enjoy! :stuck_out_tongue_winking_eye:
 
 ## Specifics
 
