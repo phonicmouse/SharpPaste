@@ -19,7 +19,7 @@ A simple and Open-Source C# ASP.NET/NancyFX pastebin, made with :heart: in Italy
 ### Linux
 **Dependencies:**
 * Mono (see [Supported Mono Versions](#supported-mono-versions) for a full list of supported versions)
-* XSP ( [latest](https://github.com/mono/xsp) version should be ok)
+* XSP ( [latest](https://github.com/mono/xsp) version should be fine)
 
 
 **Instructions:**
