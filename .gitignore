@@ -257,5 +257,8 @@ paket-files/
 .idea/
 *.sln.iml
 
+# OpenSUSE System files
+.directory
+
 # DATABASE FILES
 *.db
