@@ -51,13 +51,13 @@ A simple and Open-Source C# ASP.NET/NancyFX pastebin, made with :heart: in Italy
 See [CI](https://travis-ci.org/phonicmouse/SharpPaste) for more details.
 
 #### Package Versions
-| Package Name         | Current Version | Previous Version(s)     |
-|----------------------|:---------------:|:-----------------------:|
-| Bootstrap            | 3.3.7           | 3.3.4                   |
-| Bootstrap Flat       | 3.3.4           | 3.3.4                   |
-| jQuery               | 3.1.1           | 3.1.1                   |
-| LiteDB               | 3.1.0           | 2.0.0                   |
-| MlkPwgen             | 0.3.0           | 0.2.0                   |
-| Nancy                | 1.4.3           | 1.4.3                   |
-| Nancy.Hosting.Aspnet | 1.4.1           | 1.4.1                   |
-| Newtonsoft.Json      | 9.0.1           | 9.0.1                   |
+| Package Name            | Current Version | Previous Version(s)     |
+|-------------------------|:---------------:|:-----------------------:|
+| Bootstrap               | 3.3.7           | 3.3.4                   |
+| Bootstrap Flat          | 3.3.4           | 3.3.4                   |
+| jQuery                  | 3.1.1           | 3.1.1                   |
+| LiteDB                  | 3.1.0           | 2.0.0                   |
+| MlkPwgen                | 0.3.0           | 0.2.0                   |
+| Nancy                   | 1.4.3           | 1.4.3                   |
+| Nancy Hosting (ASP.NET) | 1.4.1           | 1.4.1                   |
+| Newtonsoft.Json         | 9.0.1           | 9.0.1                   |
