@@ -16,14 +16,14 @@ A simple and Open-Source C# ASP.NET/NancyFX pastebin, made with :heart: in Italy
 
 ## Installation
 
-### Linux
+### Linux/Mac OS X
 **Dependencies:**
 * Mono (see [Supported Mono Versions](#supported-mono-versions) for a full list of supported versions)
 * XSP ( [latest](https://github.com/mono/xsp) version should be fine)
 
 
 **Instructions:**
-1. Install [mono](http://www.mono-project.com/docs/getting-started/install/linux/)
+1. Install ```mono```[Linux](http://www.mono-project.com/docs/getting-started/install/linux/) or [OS X](http://www.mono-project.com/docs/getting-started/install/mac/)
 2. Install [XSP](https://github.com/mono/xsp/blob/master/INSTALL)
 3. Clone SharpPaste repository ```git clone https://github.com/phonicmouse/SharpPaste.git```
 4. Enter repo's directory ```cd SharpPaste```
@@ -31,19 +31,6 @@ A simple and Open-Source C# ASP.NET/NancyFX pastebin, made with :heart: in Italy
 6. Start [XSP Web Server](http://www.mono-project.com/docs/web/aspnet/#aspnet-hosting-with-xsp) ```xsp``` or ```xsp4``` if you get errors with the first one
 7. Done. Enjoy! :stuck_out_tongue_winking_eye:
 
-### Mac OS X
-**Dependencies:**
-* Mono (see [Supported Mono Versions](#supported-mono-versions) for a full list of supported versions)
-* XSP ( [latest](https://github.com/mono/xsp) version should be fine)
-
-**Instructions:**
-1. Install [mono](http://www.mono-project.com/docs/getting-started/install/mac/)
-2. Install [XSP](https://github.com/mono/xsp/blob/master/INSTALL)
-3. Clone SharpPaste repository ```git clone https://github.com/phonicmouse/SharpPaste.git```
-4. Enter repo's directory ```cd SharpPaste```
-5. Build Solution ```xbuild SharpPaste.sln```
-6. Start [XSP Web Server](http://www.mono-project.com/docs/web/aspnet/#aspnet-hosting-with-xsp) ```xsp``` or ```xsp4``` if you get errors with the first one
-7. Done. Enjoy! :stuck_out_tongue_winking_eye:
 
 ## Specifics
 
