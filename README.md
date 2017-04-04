@@ -49,7 +49,7 @@ A simple and Open-Source C# ASP.NET/NancyFX pastebin, made with :heart: in Italy
 | 2.x.x          | :x:                |
 | 1.x.x          | :x:                |
 
-See [CI](https://travis-ci.org/phonicmouse/SharpPaste) for more details.
+See [Travis CI](https://travis-ci.org/phonicmouse/SharpPaste) for more details.
 
 #### Package Versions
 | Package Name            | Current Version | Previous Version(s)     |
