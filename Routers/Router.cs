@@ -20,7 +20,7 @@ namespace SharpPaste
 		{
 			Get["/"] = _ => View["index"];
 			
-			Get["/paste/{longId}"] = parameters => {
+			Get["/{longId}"] = parameters => {
 				string longId = parameters.longId;
 				using(var db = new LiteDatabase(Config.DBPATH))
 				{
@@ -30,7 +30,7 @@ namespace SharpPaste
 				}
 			};
 			
-			Get["/paste/{longId}/raw"] = parameters => {
+			Get["/{longId}/raw"] = parameters => {
 				string longId = parameters.longId;
 				
 				using(var db = new LiteDatabase(Config.DBPATH))
@@ -43,7 +43,7 @@ namespace SharpPaste
 				}
 			};
 			
-			//Get["/paste/list"] = _ => {
+			//Get["/list"] = _ => {
 			//	using(var db = new LiteDatabase(Config.DBPATH))
 			//	{
 			//		var list = db.GetCollection<Paste>("pastes").FindAll().ToArray();
@@ -53,7 +53,7 @@ namespace SharpPaste
 			//	}
 			//};
 			
-			Post["/paste/add"] = _ => {
+			Post["/add"] = _ => {
 				var body = this.Request.Body;
 				
 				int length = (int) body.Length;
@@ -83,7 +83,7 @@ namespace SharpPaste
 				return longId;
 			};
 			
-			Post["/paste/delete"] = _ => {
+			Post["/delete"] = _ => {
 				return 0; // WIP
 			};
 		}
