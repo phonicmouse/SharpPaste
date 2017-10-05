@@ -14,12 +14,12 @@ $("#addpaste").click(function () {
         }
         paste.body = window.btoa($("#body").val());
         paste.language = $("#languageSelection option:selected").val();
-        var postUrl = location.origin + "/paste/add";
+        var postUrl = location.origin + "/add";
         var data = JSON.stringify(paste);
         console.log("JSON:", data);
         $.post(postUrl, data, function (responseData) {
             var pasteToken = new String(responseData);
-            window.location = location.origin + "/paste/" + pasteToken;
+            window.location = location.origin + "/" + pasteToken;
         });
     } else {
         $("#pasteerrormodal").modal("show");
