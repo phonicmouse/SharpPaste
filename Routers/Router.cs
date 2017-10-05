@@ -43,15 +43,15 @@ namespace SharpPaste
 				}
 			};
 			
-			Get["/paste/list"] = _ => {
-				using(var db = new LiteDatabase(Config.DBPATH))
-				{
-					var list = db.GetCollection<Paste>("pastes").FindAll().ToArray();
-					var jsonList = JsonConvert.SerializeObject(list);
-					
-					return jsonList;
-				}
-			};
+			//Get["/paste/list"] = _ => {
+			//	using(var db = new LiteDatabase(Config.DBPATH))
+			//	{
+			//		var list = db.GetCollection<Paste>("pastes").FindAll().ToArray();
+			//		var jsonList = JsonConvert.SerializeObject(list);
+			//		
+			//		return jsonList;
+			//	}
+			//};
 			
 			Post["/paste/add"] = _ => {
 				var body = this.Request.Body;
