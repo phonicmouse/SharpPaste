@@ -43,7 +43,7 @@ A simple and Open-Source C# ASP.NET/NancyFX pastebin, made with :heart: in Italy
 | latest (5.4.0) | :interrobang:      |
 | stable (5.2.x) | :white_check_mark: |
 | 5.0.1          | :white_check_mark: |
-| 4.8.0          | :white_check_mark: |
+| 4.8.1          | :white_check_mark: |
 | 4.6.2          | :white_check_mark: |
 | 4.4.2          | :white_check_mark: |
 | 4.2.x          | :x:                |
