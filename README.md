@@ -40,8 +40,9 @@ A simple and Open-Source C# ASP.NET/NancyFX pastebin, made with :heart: in Italy
 
 | Version        | Supported          |
 |:--------------:|:------------------:|
-| latest (5.0.0) | :interrobang:      |
-| stable (4.8.x) | :white_check_mark: |
+| latest (5.4.0) | :interrobang:      |
+| stable (5.2.x) | :white_check_mark: |
+| 5.0.1          | :white_check_mark: |
 | 4.8.0          | :white_check_mark: |
 | 4.6.2          | :white_check_mark: |
 | 4.4.2          | :white_check_mark: |
@@ -54,14 +55,14 @@ A simple and Open-Source C# ASP.NET/NancyFX pastebin, made with :heart: in Italy
 See [Travis CI](https://travis-ci.org/phonicmouse/SharpPaste) for more details.
 
 #### Package Versions
-| Package Name            | Current Version | Previous Version(s)     |
-|-------------------------|:---------------:|:-----------------------:|
-| Bootstrap               | 3.3.7           | 3.3.4                   |
-| Bootstrap Flat          | 3.3.4           | 3.3.4                   |
-| jQuery                  | 3.1.1           | 3.1.1                   |
-| LiteDB                  | 3.1.0           | 2.0.0                   |
-| MlkPwgen                | 0.3.0           | 0.2.0                   |
-| Nancy                   | 1.4.3           | 1.4.3                   |
-| Nancy Hosting (ASP.NET) | 1.4.1           | 1.4.1                   |
-| Nancy Hosting (Self)    | -----           | -----                   |
-| Newtonsoft.Json         | 9.0.1           | 9.0.1                   |
+| Package Name            | Current Version | 
+|-------------------------|:---------------:|
+| Bootstrap               | 3.3.7           |
+| Bootstrap Flat          | 3.3.4           | 
+| jQuery                  | 3.2.1           | 
+| LiteDB                  | 3.1.4           | 
+| MlkPwgen                | 0.3.0           | 
+| Nancy                   | 1.4.4           | 
+| Nancy Hosting (ASP.NET) | 1.4.1           |
+| Nancy Hosting (Self)    | -----           | 
+| Newtonsoft.Json         | 10.0.3          | 
