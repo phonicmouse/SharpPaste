@@ -30,16 +30,14 @@ namespace SharpPaste
 				}
 			};
 			
-			Get["/{longId}/raw"] = parameters => {
+			Get["/raw/{longId}"] = parameters => {
 				string longId = parameters.longId;
 				
 				using(var db = new LiteDatabase(Config.DBPATH))
 				{
 					var result = db.GetCollection<Paste>("pastes").FindOne(Query.EQ("LongId", longId));
-					var encodedBytes = Convert.FromBase64String(result.Body);
-					var decodedString = Encoding.UTF8.GetString(encodedBytes);
 					
-					return decodedString;
+					return result.Body;
 				}
 			};
 			
@@ -81,10 +79,6 @@ namespace SharpPaste
 				}
 				
 				return longId;
-			};
-			
-			Post["/delete"] = _ => {
-				return 0; // WIP
 			};
 		}
 	}
