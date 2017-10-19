@@ -8,6 +8,7 @@ A simple and Open-Source C# ASP.NET/NancyFX pastebin, made with :heart: in Italy
 * Mono - C# Cross-Platform Compiler
 * NancyFX - Open Source Web Framework
 * LiteDB - Embedded Database
+* [Strong PwGen](https://gist.github.com/jacobbuck/4247179) - Strong random string generator
 * SCrypt - Key generation algorithm (used for AES256 keys and for paste's token)
 * AES-JS - Library to encrypt data using AES directly in your browser
 * Bootstrap - UI Framework
