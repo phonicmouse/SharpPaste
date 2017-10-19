@@ -34,7 +34,7 @@ SharpPaste
                     </select>
                 </div>
                 <div class="btn-group pull-right" role="group" aria-label="...">
-                    <button type="button" class="btn btn-primary" id="addpaste">Save</button>
+                    <button type="button" class="btn btn-success" id="addpaste">Save</button>
                     <button type="button" class="btn btn-danger" id="deletepaste" data-toggle="modal" data-target="#confirmdeletemodal">Delete</button>
                 </div>
             </form>

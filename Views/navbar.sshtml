@@ -5,7 +5,7 @@
             <a class="navbar-brand" id="navbarbrand" href="">SharpPaste</a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <button type="button" class="btn btn-success navbar-btn navbar-right" id="newpastenavbutton" aria-label="Left Align">
+            <button type="button" class="btn btn-info navbar-btn navbar-right" id="newpastenavbutton" aria-label="Left Align">
                 <span class="glyphicon glyphicon-plus"></span>
                 New Paste
             </button>

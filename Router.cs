@@ -4,8 +4,6 @@
  * Date: 01/08/2016
  * Time: 19:36
  */
-using System;
-using System.Linq;
 using System.Text;
 using LiteDB;
 using MlkPwgen;
@@ -14,13 +12,13 @@ using Newtonsoft.Json;
 
 namespace SharpPaste
 {
-	public class Router : NancyModule
+    public class Router : NancyModule
 	{
 		public Router()
 		{
 			Get["/"] = _ => View["index"];
 			
-			Get["/{longId}"] = parameters => {
+			Get["/paste/{longId}"] = parameters => {
 				string longId = parameters.longId;
 				using(var db = new LiteDatabase(Config.DBPATH))
 				{
@@ -40,16 +38,6 @@ namespace SharpPaste
 					return result.Body;
 				}
 			};
-			
-			//Get["/list"] = _ => {
-			//	using(var db = new LiteDatabase(Config.DBPATH))
-			//	{
-			//		var list = db.GetCollection<Paste>("pastes").FindAll().ToArray();
-			//		var jsonList = JsonConvert.SerializeObject(list);
-			//		
-			//		return jsonList;
-			//	}
-			//};
 			
 			Post["/add"] = _ => {
 				var body = this.Request.Body;
