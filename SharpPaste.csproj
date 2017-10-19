@@ -116,9 +116,13 @@
     <Content Include="Custom\css\prism-vs.css" />
     <Content Include="Custom\css\prism-xonokai.css" />
     <Content Include="Custom\js\aes.js" />
+    <Content Include="Custom\js\buffer.js" />
+    <Content Include="Custom\js\paste.js" />
     <Content Include="Custom\js\pwgen.js" />
     <Content Include="Custom\js\scrypt.js" />
+    <Content Include="Custom\js\setImmediate.js" />
     <Content Include="Custom\js\spin.js" />
+    <Content Include="Custom\js\unorm.js" />
     <Content Include="Scripts\jquery-3.2.1.js" />
     <Content Include="Scripts\jquery-3.2.1.min.js" />
     <Content Include="Scripts\jquery-3.2.1.slim.js" />

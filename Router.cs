@@ -50,21 +50,21 @@ namespace SharpPaste
 				var decodedPaste = JsonConvert.DeserializeObject<Paste>(Encoding.Default.GetString(data));
 				
 				string longId = PasswordGenerator.Generate(Config.TOKENLENGTH);
-				
-				using(var db = new LiteDatabase(Config.DBPATH))
-				{
-					var pastes = db.GetCollection<Paste>("pastes");
-					
-					var paste = new Paste
-					{
-						LongId = longId,
-						Title = decodedPaste.Title,
-						Body = decodedPaste.Body,
-						Language = decodedPaste.Language
-					};
-					
-					pastes.Insert(paste);
-				}
+
+                using (var db = new LiteDatabase(Config.DBPATH))
+                {
+                    var pastes = db.GetCollection<Paste>("pastes");
+
+                    var paste = new Paste
+                    {
+                        LongId = longId,
+                        Title = decodedPaste.Title,
+                        Body = decodedPaste.Body,
+                        Language = decodedPaste.Language
+                    };
+
+                    pastes.Insert(paste);
+                }
 				
 				return longId;
 			};

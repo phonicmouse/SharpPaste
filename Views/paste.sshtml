@@ -20,10 +20,7 @@
 	<br>
 </div>
 
-<script>
-    document.title = "SharpPaste" + " - " + window.atob("@Model.Title");
-</script>
-
 <script src="/js/prism.js"></script>
+<script src="/js/paste.js"></script>
 
 @EndSection

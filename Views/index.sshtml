@@ -1,9 +1,14 @@
 ﻿@Master['master.sshtml']
 
 @Section['HeadAddings']
+    <!-- Crypto Libraries -->
     <script src="/js/pwgen.js"></script>
+	<script src="/js/buffer.js"></script>
+	<script src="/js/unorm.js"></script>
+	<script src="/js/setImmediate.js"></script>
     <script src="/js/scrypt.js"></script>
     <script src="/js/aes.js"></script>
+	<!-- Spin.js -->
 	<script src="/js/spin.js"></script>
 @EndSection
 
