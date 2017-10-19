@@ -18,7 +18,7 @@ namespace SharpPaste
 		{
 			Get["/"] = _ => View["index"];
 			
-			Get["/paste/{longId}"] = parameters => {
+			Get["/{longId}"] = parameters => {
 				string longId = parameters.longId;
 				using(var db = new LiteDatabase(Config.DBPATH))
 				{

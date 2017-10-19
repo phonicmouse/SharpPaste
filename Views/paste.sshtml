@@ -2,7 +2,8 @@
 
 @Section['HeadAddings']
 
-<link rel="stylesheet" type="" href="/custom/css/prism.css">
+<link rel="stylesheet" type="" href="/css/prism.css">
+<script src="/js/aes.js"></script>
 
 @EndSection
 

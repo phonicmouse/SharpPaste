@@ -6,11 +6,11 @@
 
     <title>SharpPaste</title>
   
-    <!-- Local Bootstrap CSS -->
+    <!-- Local CSS -->
     <link rel="stylesheet" media="screen" href="/css/bootstrap.css">
     <link rel="stylesheet" media="screen" href="/css/bootstrap-flat.css">
     
-    <!-- Local Bootstrap and jQuery JS -->
+    <!-- Local JS -->
     <script src="/js/jquery.js"></script>
     <script src="/js/bootstrap.js"></script>
       

@@ -14,8 +14,8 @@ namespace SharpPaste
 	{
 		protected override void ConfigureConventions(NancyConventions nancyConventions)
 		{
-			nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("/custom/js", @"Custom\js")); // Serve custom JS folder
-			nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("/custom/css", @"Custom\css")); // Serve custom CSS folder
+			nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("/js", @"Custom\js")); // Serve custom JS folder
+			nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("/css", @"Custom\css")); // Serve custom CSS folder
 			nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("/fonts", @"packages\bootstrap.3.3.7\content\fonts")); // Serve bootstrap's fonts folder
 			nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddFile("/css/bootstrap.css", @"packages\bootstrap.3.3.7\content\Content\bootstrap.min.css")); // Serve Bootstrap CSS
 			nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddFile("/css/bootstrap-flat.css", @"packages\Bootstrap.Flat.3.3.4\Content\Content\bootstrap-flat.min.css")); // Serve Bootstrap Flat Theme CSS

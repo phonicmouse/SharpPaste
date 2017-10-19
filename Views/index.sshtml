@@ -1,5 +1,11 @@
 ﻿@Master['master.sshtml']
 
+@Section['HeadAddings']
+    <script src="/js/pwgen.js"></script>
+    <script src="/js/scrypt.js"></script>
+    <script src="/js/aes.js"></script>
+@EndSection
+
 @Section['Title']
 SharpPaste
 @EndSection
