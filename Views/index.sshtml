@@ -33,10 +33,7 @@ SharpPaste
                         <option value="markup">MarkUp</option>
                     </select>
                 </div>
-                <div class="btn-group pull-right" role="group" aria-label="...">
-                    <button type="button" class="btn btn-success" id="addpaste">Save</button>
-                    <button type="button" class="btn btn-danger" id="deletepaste" data-toggle="modal" data-target="#confirmdeletemodal">Delete</button>
-                </div>
+                <button type="button" class="btn btn-success btn-block" id="addpaste">Encrypt and Send</button>
             </form>
             <!-- Add paste creation error modal -->
             <div class="modal fade" id="pasteerrormodal" tabindex="-1" role="dialog" aria-labelledby="addpastemodallabel">
@@ -52,25 +49,6 @@ SharpPaste
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Paste deletion confirmation modal -->
-            <div class="modal fade" id="confirmdeletemodal" tabindex="-1" role="dialog" aria-labelledby="confirmmodallabel">
-                <div class="modal-dialog modal-sm" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="confirmmodallabel">Confirm Deletion</h4>
-                        </div>
-                        <div class="modal-body">
-                            Are you sure that you want to delete? 
-                            <br> 
-                            This action is not reversible.
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-danger" data-dismiss="modal" id="confirmdeletepaste">Delete</button>
                         </div>
                     </div>
                 </div>

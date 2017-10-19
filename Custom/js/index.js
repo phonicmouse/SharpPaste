@@ -1,10 +1,4 @@
-﻿$("#confirmdeletepaste").click(function () {
-    $("#title").val("");
-    $("#body").val("");
-    $("#languageSelection").val("none");
-});
-
-$("#addpaste").click(function () {
+﻿$("#addpaste").click(function () {
     if ($.trim($("#body").val())) {
         var paste = {};
         if ($.trim($("#title").val())) {

@@ -16,6 +16,7 @@
     </div>
     <pre><code class="language-@Model.Language line-numbers" id="body">@Model.Body</code></pre>
     <a class="btn btn-link center-block" id="view-raw" href="/raw/@Model.LongId">View Raw</a>
+	<br>
 </div>
 
 <script>
