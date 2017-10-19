@@ -42,8 +42,8 @@ A simple and Open-Source C# ASP.NET/NancyFX pastebin, made with :heart: in Italy
 
 | Version        | Supported          |
 |:--------------:|:------------------:|
-| latest (5.4.0) | :interrobang:      |
-| stable (5.2.x) | :white_check_mark: |
+| latest (5.4.0) | :white_check_mark: |
+| 5.2.0          | :white_check_mark: |
 | 5.0.1          | :white_check_mark: |
 | 4.8.1          | :white_check_mark: |
 | 4.6.2          | :white_check_mark: |
