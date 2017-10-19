@@ -1,0 +1,11 @@
+[Unit]
+Description=XSP Server Serving SharpPaste Application
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/xsp4 --nonstop --port=9612 --applications=/:/opt/sharppaste
+KillMode=process
+Timeoutsec=infinity
+
+[Install]
+WantedBy=multi-user.target
