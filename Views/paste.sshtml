@@ -24,6 +24,6 @@
     document.title = "SharpPaste" + " - " + window.atob("@Model.Title");
 </script>
 
-<script src="/custom/js/prism.js"></script>
+<script src="/js/prism.js"></script>
 
 @EndSection

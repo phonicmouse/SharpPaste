@@ -4,6 +4,7 @@
     <script src="/js/pwgen.js"></script>
     <script src="/js/scrypt.js"></script>
     <script src="/js/aes.js"></script>
+	<script src="/js/spin.js"></script>
 @EndSection
 
 @Section['Title']
@@ -16,7 +17,7 @@ SharpPaste
 
 <!--MAIN CONTENT-->
 <div class="container">
-    <div class="jumbotron">
+    <div class="jumbotron" id="spinner">
         <div class="container">
             <!-- Paste form -->
             <form>
@@ -64,6 +65,6 @@ SharpPaste
 </div>
 
 <!--Main Page Custom Script-->
-<script src="/custom/js/index.js"></script>
+<script src="/js/index.js"></script>
 
 @EndSection
