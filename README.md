@@ -6,13 +6,15 @@ A simple and Open-Source C# ASP.NET/NancyFX pastebin, made with :heart: in Italy
 
 ## Software Used
 * Mono - C# Cross-Platform Compiler
-* XSP - Cross-Platform ASP.NET Server
-* NancyFX - Web Framework
+* NancyFX - Open Source Web Framework
 * LiteDB - Embedded Database
+* SCrypt - Key generation algorithm (used for AES256 keys and for paste's token)
+* AES-JS - Library to encrypt data using AES directly in your browser
 * Bootstrap - UI Framework
 * Bootstrap Flat Theme - UI Theme
 * jQuery - DOM Framework
 * Prism (JS & CSS) - Syntax Highlighter
+* Prism Themes - Syntax Highlighter Theming
 
 ## Installation
 
@@ -53,16 +55,3 @@ A simple and Open-Source C# ASP.NET/NancyFX pastebin, made with :heart: in Italy
 | 1.x.x          | :x:                |
 
 See [Travis CI](https://travis-ci.org/phonicmouse/SharpPaste) for more details.
-
-#### Package Versions
-| Package Name            | Current Version | 
-|-------------------------|:---------------:|
-| Bootstrap               | 3.3.7           |
-| Bootstrap Flat          | 3.3.4           | 
-| jQuery                  | 3.2.1           | 
-| LiteDB                  | 3.1.4           | 
-| MlkPwgen                | 0.3.0           | 
-| Nancy                   | 1.4.4           | 
-| Nancy Hosting (ASP.NET) | 1.4.1           |
-| Nancy Hosting (Self)    | -----           | 
-| Newtonsoft.Json         | 10.0.3          | 
