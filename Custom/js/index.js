@@ -62,5 +62,3 @@ $("#addpaste").click(function () {
         $("#pasteerrormodal").modal("show");
     }
 });
-
-

@@ -15,8 +15,9 @@
     <div class="page-header">
         <h2 id="title">@Model.Title</h2>
     </div>
-    <pre><code class="language-@Model.Language line-numbers" id="body">@Model.Body</code></pre>
-    <a class="btn btn-link center-block" id="view-raw" href="/raw/@Model.LongId">View Raw</a>
+	<p id="language" hidden>@Model.Language</p>
+    <pre><code class="line-numbers" id="body">@Model.Body</code></pre>
+    <!--<a class="btn btn-link center-block" id="view-raw" href="/raw/@Model.LongId">View Raw</a>-->
 	<br>
 </div>
 
