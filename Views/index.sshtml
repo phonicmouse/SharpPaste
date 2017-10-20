@@ -7,8 +7,6 @@
 	<script src="/js/setImmediate.js"></script>
     <script src="/js/scrypt.js"></script>
     <script src="/js/aes.js"></script>
-	<!-- Graphics -->
-	<script src="/js/particles.js"></script>
 	<!-- Page Script -->
 	<script src="/js/index.js"></script>
 @EndSection
