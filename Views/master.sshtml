@@ -3,22 +3,16 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-
     <title>SharpPaste</title>
-  
-    <!-- Local CSS -->
     <link rel="stylesheet" media="screen" href="/css/bootstrap.css">
     <link rel="stylesheet" media="screen" href="/css/bootstrap-flat.css">
-    
-    <!-- Local JS -->
-    <script src="/js/jquery.js"></script>
-    <script src="/js/bootstrap.js"></script>
-      
-    <!-- Template section to add things to head for single pages (Optional) -->
     @Section['HeadAddings']
   </head>
   <body>
     @Section['Content']
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/navbar.js"></script>
     @Section['Scripts']
   </body>
 </html>

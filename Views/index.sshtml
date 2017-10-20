@@ -1,5 +1,4 @@
 ﻿@Master['master.sshtml']
-
 @Section['Scripts']
     <!-- Crypto Libraries -->
     <script src="/js/pwgen.js"></script>
@@ -9,18 +8,15 @@
     <script src="/js/scrypt.js"></script>
     <script src="/js/aes.js"></script>
 	<!-- Graphics -->
+	<script src="/js/particles.js"></script>
 	<!-- Page Script -->
 	<script src="/js/index.js"></script>
 @EndSection
-
 @Section['Title']
 SharpPaste
 @EndSection
-
 @Section['Content']
-
 @Partial['navbar']
-
 <!--MAIN CONTENT-->
 <div class="container">
     <div class="jumbotron">
@@ -74,5 +70,5 @@ SharpPaste
         </div>
     </div>
 </div>
-
+<div id="particles-js"></div>
 @EndSection
