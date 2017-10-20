@@ -19,5 +19,6 @@
   </head>
   <body>
     @Section['Content']
+    @Section['Scripts']
   </body>
 </html>

@@ -1,6 +1,6 @@
 ﻿@Master['master.sshtml']
 
-@Section['HeadAddings']
+@Section['Scripts']
     <!-- Crypto Libraries -->
     <script src="/js/pwgen.js"></script>
 	<script src="/js/buffer.js"></script>
@@ -10,6 +10,8 @@
     <script src="/js/aes.js"></script>
 	<!-- Spin.js -->
 	<script src="/js/spin.js"></script>
+	<!-- Page Script -->
+	<script src="/js/index.js"></script>
 @EndSection
 
 @Section['Title']
@@ -73,8 +75,5 @@ SharpPaste
         </div>
     </div>
 </div>
-
-<!--Main Page Custom Script-->
-<script src="/js/index.js"></script>
 
 @EndSection
