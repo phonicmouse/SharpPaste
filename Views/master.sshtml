@@ -7,12 +7,12 @@
     <title>SharpPaste</title>
   
     <!-- Local CSS -->
-    <link rel="stylesheet" media="screen" href="/c/bootstrap.css">
-    <link rel="stylesheet" media="screen" href="/c/bootstrap-flat.css">
+    <link rel="stylesheet" media="screen" href="/css/bootstrap.css">
+    <link rel="stylesheet" media="screen" href="/css/bootstrap-flat.css">
     
     <!-- Local JS -->
-    <script src="/j/jquery.js"></script>
-    <script src="/j/bootstrap.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
       
     <!-- Template section to add things to head for single pages (Optional) -->
     @Section['HeadAddings']
