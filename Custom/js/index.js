@@ -1,6 +1,4 @@
-﻿/* Graphics */
-particlesJS.load("particles-js", '/js/particlesjs-config.json');
-/* Paste Encryption and Sending */
+﻿/* Paste Encryption and Sending */
 $("#addpaste").click(function () {
     if ($.trim($("#body").val())) {
         var title = null;
