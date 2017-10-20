@@ -52,12 +52,12 @@ SharpPaste
                 <div class="modal-dialog modal-sm" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title" id="addpastemodallabel">Paste Creation Error</h4>
+                            <h4 class="modal-title" id="addpastemodallabel">Error uploading paste</h4>
                         </div>
                         <div class="modal-body">
-                            You can't leave the paste empty!
+                            You can't leave the paste body empty!
                             <br>
-                            Fill the form and retry.
+                            Fill in the form and retry.
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
