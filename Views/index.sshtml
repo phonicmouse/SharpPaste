@@ -55,7 +55,7 @@ SharpPaste
                             <h4 class="modal-title" id="addpastemodallabel">Error uploading paste</h4>
                         </div>
                         <div class="modal-body">
-                            You can't leave the paste body empty!
+                            You can't leave the paste field(s) empty!
                             <br>
                             Fill in the form and retry.
                         </div>
