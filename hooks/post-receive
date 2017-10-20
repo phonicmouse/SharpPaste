@@ -1,4 +1,9 @@
+#!/bin/bash
+
+
+service xsp stop
 
 
 
-
+xbuild /opt/sharppaste/SharpPaste.sln
+service xsp start
