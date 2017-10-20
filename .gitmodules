@@ -1,9 +1,0 @@
-[submodule "Custom/css/prism-themes"]
-	path = Custom/css/prism-themes
-	url = https://github.com/PrismJS/prism-themes
-[submodule "Custom/js/aes-js"]
-	path = Custom/js/aes-js
-	url = https://github.com/ricmoo/aes-js
-[submodule "Custom/js/scrypt-js"]
-	path = Custom/js/scrypt-js
-	url = https://github.com/ricmoo/scrypt-js
