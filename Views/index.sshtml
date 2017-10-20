@@ -8,8 +8,7 @@
 	<script src="/js/setImmediate.js"></script>
     <script src="/js/scrypt.js"></script>
     <script src="/js/aes.js"></script>
-	<!-- Spin.js -->
-	<script src="/js/spin.js"></script>
+	<!-- Graphics -->
 	<!-- Page Script -->
 	<script src="/js/index.js"></script>
 @EndSection
@@ -24,7 +23,7 @@ SharpPaste
 
 <!--MAIN CONTENT-->
 <div class="container">
-    <div class="jumbotron" id="spinner">
+    <div class="jumbotron">
         <div class="container">
             <!-- Paste form -->
             <form>

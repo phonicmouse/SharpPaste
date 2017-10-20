@@ -4,6 +4,7 @@
 
 <link rel="stylesheet" type="" href="/css/prism.css">
 <script src="/js/aes.js"></script>
+<script src="/js/paste.js"></script>
 
 @EndSection
 
@@ -21,7 +22,10 @@
 	<br>
 </div>
 
+@EndSection
+
+@Section['Scripts']
+
 <script src="/js/prism.js"></script>
-<script src="/js/paste.js"></script>
 
 @EndSection
