@@ -43,6 +43,7 @@ SharpPaste
                         <option value="css">CSS</option>
                         <option value="javascript">JavaScript</option>
                         <option value="markup">MarkUp</option>
+						<option value="aspnet">C#</option>
                     </select>
                 </div>
                 <button type="button" class="btn btn-success btn-block" id="addpaste">Encrypt and Upload</button>
