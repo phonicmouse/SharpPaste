@@ -42,6 +42,7 @@ SharpPaste
                         <option value="html">HTML</option>
                         <option value="css">CSS</option>
                         <option value="javascript">JavaScript</option>
+						<option value="php">PHP</option>
                         <option value="markup">MarkUp</option>
 						<option value="c">C</option>
 						<option value="cpp">C++</option>
