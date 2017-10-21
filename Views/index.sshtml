@@ -27,7 +27,7 @@ SharpPaste
                 </div>
                 <div class="form-group">
                     <label for="body">Paste Text</label>
-                    <textarea type="text" class="form-control" rows="20" style="resize: vertical;" name="body" id="body" placeholder="The text that you want to paste..."></textarea>
+                    <textarea type="text" class="form-control" rows="20" style="resize: vertical;" name="body" id="body" placeholder="The text that you want to upload..."></textarea>
                 </div>
                 <div class="form-group">
                     <label for="languageSelection">Language</label>
@@ -51,9 +51,9 @@ SharpPaste
 						<option value="brainfuck">Brainfuck</option>
 						<option value="bro">Bro</option>
 						<option value="c">C</option>
-						<option value="clike">C-Like</option>
 						<option value="cpp">C++</option>
 						<option value="csharp">C#</option>
+						<option value="clike">C-Like</option>
 						<option value="coffeescript">CoffeeScript</option>
 						<option value="crystal">Crystal</option>
 						<option value="css">CSS</option>
