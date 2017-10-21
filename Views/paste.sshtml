@@ -24,7 +24,7 @@
 @Section['Scripts']
 
 <script src="/js/lib/aes.js"></script>
-<script src="/js/lib/prism.js"></script>
 <script src="/js/paste.js"></script>
+<script src="/js/lib/prism.js"></script>
 
 @EndSection
