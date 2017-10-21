@@ -12,11 +12,10 @@
 
 <div class="container">
     <div class="page-header">
-        <h2 id="title">@Model.Title</h2>
+        <h2 id="title"></h2>
     </div>
-	<p id="language" hidden>@Model.Language</p>
-    <pre><code class="line-numbers" id="body">@Model.Body</code></pre>
-    <!--<a class="btn btn-link center-block" id="view-raw" href="/raw/@Model.LongId">View Raw</a>-->
+    <pre><code class="line-numbers" id="body"></code></pre>
+    <!--<a class="btn btn-link center-block" id="view-raw" href="/raw/">View Raw</a>-->
 </div>
 
 @EndSection

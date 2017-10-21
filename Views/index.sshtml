@@ -51,9 +51,9 @@ SharpPaste
 						<option value="brainfuck">Brainfuck</option>
 						<option value="bro">Bro</option>
 						<option value="c">C</option>
+						<option value="clike">C-Like</option>
 						<option value="cpp">C++</option>
 						<option value="csharp">C#</option>
-						<option value="clike">C-Like</option>
 						<option value="coffeescript">CoffeeScript</option>
 						<option value="crystal">Crystal</option>
 						<option value="css">CSS</option>

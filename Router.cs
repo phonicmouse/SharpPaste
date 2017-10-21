@@ -24,8 +24,19 @@ namespace SharpPaste
                 using (var db = new LiteDatabase(Config.DBPATH))
                 {
                     var result = db.GetCollection<Paste>("pastes").FindOne(Query.EQ("LongId", longId));
+                    //check if paste exists (todo)
+                    return View["paste"];
+                }
+            };
 
-                    return View["paste", result];
+            Get["/json/{longId}"] = parameters =>
+            {
+                string longId = parameters.longId;
+                using (var db = new LiteDatabase(Config.DBPATH))
+                {
+                    var result = db.GetCollection<Paste>("pastes").FindOne(Query.EQ("LongId", longId));
+                    var encodedPaste = JsonConvert.SerializeObject(result);
+                    return encodedPaste;
                 }
             };
 
