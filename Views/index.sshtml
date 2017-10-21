@@ -161,7 +161,7 @@ SharpPaste
 						<option value="yaml">YAML</option>
                     </select>
                 </div>
-                <button type="button" class="btn btn-success btn-block" id="addpaste">Encrypt and Upload</button>
+                <button type="button" class="btn btn-success btn-block" id="addpaste">Upload</button>
             </form>
             <!-- Add paste creation error modal -->
             <div class="modal fade" id="pasteerrormodal" tabindex="-1" role="dialog" aria-labelledby="addpastemodallabel">
