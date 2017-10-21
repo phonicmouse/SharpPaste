@@ -23,8 +23,8 @@
 
 @Section['Scripts']
 
-<script src="/js/aes.js"></script>
-<script src="/js/prism.js"></script>
+<script src="/js/lib/aes.js"></script>
+<script src="/js/lib/prism.js"></script>
 <script src="/js/paste.js"></script>
 
 @EndSection

@@ -1,12 +1,12 @@
 ﻿@Master['master.sshtml']
 @Section['Scripts']
     <!-- Crypto Libraries -->
-    <script src="/js/pwgen.js"></script>
-	<script src="/js/buffer.js"></script>
-	<script src="/js/unorm.js"></script>
-	<script src="/js/setImmediate.js"></script>
-    <script src="/js/scrypt.js"></script>
-    <script src="/js/aes.js"></script>
+    <script src="/js/lib/pwgen.js"></script>
+	<script src="/js/lib/buffer.js"></script>
+	<script src="/js/lib/unorm.js"></script>
+	<script src="/js/lib/setImmediate.js"></script>
+    <script src="/js/lib/scrypt.js"></script>
+    <script src="/js/lib/aes.js"></script>
 	<!-- Page Script -->
 	<script src="/js/index.js"></script>
 @EndSection

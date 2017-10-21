@@ -10,8 +10,8 @@
   </head>
   <body>
     @Section['Content']
-    <script src="/js/jquery.js"></script>
-    <script src="/js/bootstrap.js"></script>
+    <script src="/js/lib/jquery.js"></script>
+    <script src="/js/lib/bootstrap.js"></script>
     <script src="/js/navbar.js"></script>
     @Section['Scripts']
   </body>
