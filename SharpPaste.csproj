@@ -113,6 +113,13 @@
     <Content Include="Static\css\prism-pojoaque.css" />
     <Content Include="Static\css\prism-vs.css" />
     <Content Include="Static\css\prism-xonokai.css" />
+    <Content Include="Static\js\lib\aes.js" />
+    <Content Include="Static\js\lib\buffer.js" />
+    <Content Include="Static\js\lib\prism.js" />
+    <Content Include="Static\js\lib\pwgen.js" />
+    <Content Include="Static\js\lib\scrypt.js" />
+    <Content Include="Static\js\lib\setImmediate.js" />
+    <Content Include="Static\js\lib\unorm.js" />
     <Content Include="Static\js\paste.js" />
     <None Include="Views\index.sshtml" />
     <None Include="Views\master.sshtml" />
@@ -126,9 +133,7 @@
     <Compile Include="PasteModel.cs" />
     <Compile Include="Router.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Static\js\NewFolder1\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
