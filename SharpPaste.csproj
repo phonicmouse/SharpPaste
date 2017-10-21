@@ -94,10 +94,13 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Static\js\pwgen.js" />
+    <Content Include="Static\js\scrypt.js" />
+    <Content Include="Static\js\setImmediate.js" />
+    <Content Include="Static\js\unorm.js" />
     <None Include="Static\css\prism.css" />
     <None Include="Static\js\index.js" />
     <None Include="Static\js\navbar.js" />
-    <None Include="Static\js\prism.js" />
     <None Include="packages.config" />
     <Content Include="Static\css\prism-atom-dark.css" />
     <Content Include="Static\css\prism-base16-ateliersulphurpool.light.css" />
@@ -117,11 +120,7 @@
     <Content Include="Static\js\aes.js" />
     <Content Include="Static\js\buffer.js" />
     <Content Include="Static\js\paste.js" />
-    <Content Include="Static\js\pwgen.js" />
-    <Content Include="Static\js\scrypt.js" />
-    <Content Include="Static\js\setImmediate.js" />
-    <Content Include="Static\js\spin.js" />
-    <Content Include="Static\js\unorm.js" />
+    <Content Include="Static\js\prism.js" />
     <None Include="Views\index.sshtml" />
     <None Include="Views\master.sshtml" />
     <None Include="Views\navbar.sshtml" />
