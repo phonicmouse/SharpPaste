@@ -20,13 +20,13 @@ namespace SharpPaste
 
             Get["/{longId}"] = parameters =>
             {
-                string longId = parameters.longId;
-                using (var db = new LiteDatabase(Config.DBPATH))
-                {
-                    var result = db.GetCollection<Paste>("pastes").FindOne(Query.EQ("LongId", longId));
-                    //check if paste exists (todo)
-                    return View["paste"];
-                }
+                return View["paste"];
+                //string longId = parameters.longId;
+                //using (var db = new LiteDatabase(Config.DBPATH))
+                //{
+                //    var result = db.GetCollection<Paste>("pastes").FindOne(Query.EQ("LongId", longId));
+                //    //check if paste exists (todo)
+                //}
             };
 
             Get["/json/{longId}"] = parameters =>
@@ -35,8 +35,7 @@ namespace SharpPaste
                 using (var db = new LiteDatabase(Config.DBPATH))
                 {
                     var result = db.GetCollection<Paste>("pastes").FindOne(Query.EQ("LongId", longId));
-                    var encodedPaste = JsonConvert.SerializeObject(result);
-                    return encodedPaste;
+                    return JsonConvert.SerializeObject(result);
                 }
             };
 
