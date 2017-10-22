@@ -69,7 +69,7 @@ namespace SharpPaste
                 {
                     var pastes = db.GetCollection<Paste>("pastes");
 
-                    var paste = new Paste
+                    var newPaste = new Paste
                     {
                         LongId = longId,
                         Title = decodedPaste.Title,
@@ -77,7 +77,7 @@ namespace SharpPaste
                         Language = decodedPaste.Language
                     };
 
-                    pastes.Insert(paste);
+                    pastes.Insert(newPaste);
                 }
 
                 return longId;
