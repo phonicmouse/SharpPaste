@@ -15,10 +15,10 @@ before_install:
  - sudo apt-get update
 deploy:
   - provider: script
-    script: deploy.sh develop
+    script: Deployment/develop.sh
     on:
       branch: develop
   - provider: script
-    script: deploy.sh master
+    script: Deployment/master.sh
     on:
       branch: master
