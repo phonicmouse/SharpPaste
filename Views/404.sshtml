@@ -38,13 +38,12 @@
     <body>
         <div id="particles-js"></div>
 		<h1 class="font-effect-anaglyph">404</h1>
-		<h3>Take me back to <a href="">homepage</a>...</h3>
+		<h3>Take me back to <a href="" id="homepage-link">homepage</a>...</h3>
         <script src="/js/lib/particles.js"></script>
-        <script src="/js/lib/jquery.js"></script>
 		<script>
 		  document.body.style.overflow = 'hidden';
 		  particlesJS.load('particles-js', 'js/lib/particlesjs-config.json');
-		  $("a").attr("href", location.origin + "/")
+			document.getElementById("homepage-link").href=location.origin + "/";
 		</script>
     </body>
 </html>
