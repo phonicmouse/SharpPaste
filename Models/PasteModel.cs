@@ -6,6 +6,7 @@ namespace SharpPaste
 	{
 	    private int _webViews = 0;
 	    private int _jsonHits = 0;
+	    private string _uploadedBy = "API"; // Possible values are: "API", "WEB", "CLI".
 	    public int Id { get; set; }
         public DateTime Date { get; set; }
         public string LongId { get; set; }
@@ -21,6 +22,11 @@ namespace SharpPaste
 	    {
 	        get { return _jsonHits; }
 	        set { _jsonHits = value; }
+	    }
+	    public string UploadedBy
+	    {
+	        get { return _uploadedBy; }
+	        set { _uploadedBy = value; }
 	    }
 	}
 }
