@@ -19,11 +19,9 @@ namespace SharpPaste
                 {
                     var collection = db.GetCollection<Paste>("pastes");
                     var paste = collection.FindOne(Query.EQ("LongId", parameters.longId.ToString()));
-                    if (paste != null)
-                    {
-                        paste.WebViews += 1;
-                        collection.Update(paste);
-                    }
+                    if (paste == null) return View["paste"];
+                    paste.WebViews += 1;
+                    collection.Update(paste);
                     return View["paste", paste];
                 }
             };
@@ -34,11 +32,9 @@ namespace SharpPaste
                 {
                     var collection = db.GetCollection<Paste>("pastes");
                     var paste = collection.FindOne(Query.EQ("LongId", parameters.longId.ToString()));
-                    if (paste != null)
-                    {
-                        paste.JsonHits += 1;
-                        collection.Update(paste);
-                    }
+                    if (paste == null) return JsonConvert.SerializeObject((dynamic) null);
+                    paste.JsonHits += 1;
+                    collection.Update(paste);
                     return JsonConvert.SerializeObject(paste);
                 }
             };

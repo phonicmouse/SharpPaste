@@ -6,5 +6,6 @@
     $("#body").text(aesjs.utils.utf8.fromBytes(aes.decrypt(aesjs.utils.hex.toBytes(data.Body))));
     $.getScript("/js/lib/prism.js", function () {
         $("#codeblock").removeAttr('hidden');
+        new Clipboard("#clipboard-btn");
     });
 });

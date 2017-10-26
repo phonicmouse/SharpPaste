@@ -9,20 +9,25 @@
 @Section['Content']
 
 @Partial['navbar']
-
-<div class="container">
+  <div class="container">
     <div class="page-header">
-        <h2 id="title"></h2>
+      <div class='btn-toolbar pull-right'>
+        <div class='btn-group'>
+          <button type='button' class='btn btn-link' id="clipboard-btn" data-clipboard-target="#body">Copy to Clipboard</button>
+        </div>
+      </div>
+      <h2 id="title"></h2>
     </div>
     <pre id="codeblock" hidden><code class="line-numbers language-@Model.Language" id="body"></code></pre>
     <!--<a class="btn btn-link center-block" id="view-raw" href="/raw/">View Raw</a>-->
-</div>
+  </div>
 
 @EndSection
 
 @Section['Scripts']
 
 <script src="/js/lib/aes.js"></script>
+<script src="/js/lib/clipboard.js"></script>
 <script src="/js/paste.js"></script>
 
 @EndSection
