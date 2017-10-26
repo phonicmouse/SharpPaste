@@ -6,6 +6,9 @@
     $("#body").text(aesjs.utils.utf8.fromBytes(aes.decrypt(aesjs.utils.hex.toBytes(data.Body))));
     $.getScript("/js/lib/prism.js", function () {
         $("#codeblock").removeAttr('hidden');
-        new Clipboard("#clipboard-btn");
+        var clipboard = new Clipboard("#clipboard-btn");
+        clipboard.on('success', function(e) {
+            e.clearSelection();
+        });
     });
 });
