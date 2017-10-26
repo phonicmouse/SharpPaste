@@ -9,12 +9,12 @@ mono:
  - 4.8.1
  - 4.6.2
  - 4.4.2
-deploy:
-  - provider: script
-    script: ./Deployment/develop.sh
-    on:
-      branch: develop
-  - provider: script
-    script: ./Deployment/master.sh
-    on:
-      branch: master
+#deploy:
+#  - provider: script
+#    script: ./Deployment/develop.sh
+#    on:
+#      branch: develop
+#  - provider: script
+#    script: ./Deployment/master.sh
+#    on:
+#      branch: master
