@@ -1,10 +1,4 @@
-﻿/*
- * Created by SharpDevelop.
- * User: Phonic Mouse
- * Date: 01/08/2016
- * Time: 19:36
- */
-using System.Text;
+﻿using System.Text;
 using LiteDB;
 using MlkPwgen;
 using Nancy;
@@ -39,17 +33,17 @@ namespace SharpPaste
                 }
             };
 
-            Get["/raw/{longId}"] = parameters =>
-            {
-                string longId = parameters.longId;
-
-                using (var db = new LiteDatabase(Config.DBPATH))
-                {
-                    var result = db.GetCollection<Paste>("pastes").FindOne(Query.EQ("LongId", longId));
-
-                    return result.Body;
-                }
-            };
+            //Get["/raw/{longId}"] = parameters =>
+            //{
+            //    string longId = parameters.longId;
+            //
+            //    using (var db = new LiteDatabase(Config.DBPATH))
+            //    {
+            //        var result = db.GetCollection<Paste>("pastes").FindOne(Query.EQ("LongId", longId));
+            //
+            //        return result.Body;
+            //    }
+            //};
 
             Post["/add"] = _ =>
             {
@@ -62,24 +56,30 @@ namespace SharpPaste
 
                 var decodedPaste = JsonConvert.DeserializeObject<Paste>(Encoding.Default.GetString(data));
 
-                string longId = PasswordGenerator.Generate(Config.TOKENLENGTH);
-
-                using (var db = new LiteDatabase(Config.DBPATH))
+                if (Checker.isHex(decodedPaste.Title) && Checker.isHex(decodedPaste.Body) && Checker.isHex(decodedPaste.Language))
                 {
-                    var pastes = db.GetCollection<Paste>("pastes");
+                    string longId = PasswordGenerator.Generate(Config.TOKENLENGTH);
 
-                    var newPaste = new Paste
+                    using (var db = new LiteDatabase(Config.DBPATH))
                     {
-                        LongId = longId,
-                        Title = decodedPaste.Title,
-                        Body = decodedPaste.Body,
-                        Language = decodedPaste.Language
-                    };
+                        var pastes = db.GetCollection<Paste>("pastes");
 
-                    pastes.Insert(newPaste);
+                        var newPaste = new Paste
+                        {
+                            LongId = longId,
+                            Title = decodedPaste.Title,
+                            Body = decodedPaste.Body,
+                            Language = decodedPaste.Language
+                        };
+
+                        pastes.Insert(newPaste);
+                    }
+
+                    return longId;
+                } else
+                {
+
                 }
-
-                return longId;
             };
         }
     }

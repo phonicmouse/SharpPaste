@@ -128,6 +128,7 @@
     <None Include="web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Checker.cs" />
     <Compile Include="StaticServeBootstrapper.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="PasteModel.cs" />
