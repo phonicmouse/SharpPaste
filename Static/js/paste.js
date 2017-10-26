@@ -4,7 +4,6 @@
     $("#title").text(aesjs.utils.utf8.fromBytes(aes.decrypt(aesjs.utils.hex.toBytes(data.Title))));
     document.title = 'SharpPaste - ' + $("#title").text();
     $("#body").text(aesjs.utils.utf8.fromBytes(aes.decrypt(aesjs.utils.hex.toBytes(data.Body))));
-    $("#body").addClass('language-' + aesjs.utils.utf8.fromBytes(aes.decrypt(aesjs.utils.hex.toBytes(data.Language))));
     $.getScript("/js/lib/prism.js", function () {
         $("#codeblock").removeAttr('hidden');
     });

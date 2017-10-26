@@ -8,7 +8,6 @@ $("#addpaste").click(function () {
             title = "Untitled";
         }
         var body = $("#body").val();
-        var language = $("#languageSelection option:selected").val();
         var pwLength = 32;
         var saltLength = 32;
         var pw = new buffer.SlowBuffer(generatePassword(pwLength).normalize('NFKC'));
@@ -23,7 +22,7 @@ $("#addpaste").click(function () {
                 var encryptedPaste = {};
                 encryptedPaste.Title = aesjs.utils.hex.fromBytes(aes.encrypt(aesjs.utils.utf8.toBytes(title)));
                 encryptedPaste.Body = aesjs.utils.hex.fromBytes(aes.encrypt(aesjs.utils.utf8.toBytes(body)));
-                encryptedPaste.Language = aesjs.utils.hex.fromBytes(aes.encrypt(aesjs.utils.utf8.toBytes(language)));
+                encryptedPaste.Language = $("#languageSelection option:selected").val();
                 encryptedPaste.UploadedBy = "WEB";
                 var data = JSON.stringify(encryptedPaste);
                 console.log("JSON:", data);

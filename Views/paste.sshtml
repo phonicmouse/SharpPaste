@@ -14,7 +14,7 @@
     <div class="page-header">
         <h2 id="title"></h2>
     </div>
-    <pre id="codeblock" hidden><code class="line-numbers" id="body"></code></pre>
+    <pre id="codeblock" hidden><code class="line-numbers language-@Model.Language" id="body"></code></pre>
     <!--<a class="btn btn-link center-block" id="view-raw" href="/raw/">View Raw</a>-->
 </div>
 

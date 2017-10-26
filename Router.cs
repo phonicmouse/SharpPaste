@@ -19,9 +19,12 @@ namespace SharpPaste
                 {
                     var collection = db.GetCollection<Paste>("pastes");
                     var paste = collection.FindOne(Query.EQ("LongId", parameters.longId.ToString()));
-                    paste.WebViews += 1;
-                    collection.Update(paste);
-                    return View["paste"];
+                    if (paste != null)
+                    {
+                        paste.WebViews += 1;
+                        collection.Update(paste);
+                    }
+                    return View["paste", paste];
                 }
             };
 
@@ -31,8 +34,11 @@ namespace SharpPaste
                 {
                     var collection = db.GetCollection<Paste>("pastes");
                     var paste = collection.FindOne(Query.EQ("LongId", parameters.longId.ToString()));
-                    paste.JsonHits += 1;
-                    collection.Update(paste);
+                    if (paste != null)
+                    {
+                        paste.JsonHits += 1;
+                        collection.Update(paste);
+                    }
                     return JsonConvert.SerializeObject(paste);
                 }
             };
@@ -60,7 +66,7 @@ namespace SharpPaste
 
                 var jsonPaste = JsonConvert.DeserializeObject<Paste>(Encoding.Default.GetString(data));
 
-                if (Checker.isHex(jsonPaste.Title) && Checker.isHex(jsonPaste.Body) && Checker.isHex(jsonPaste.Language))
+                if (Checker.isHex(jsonPaste.Title) && Checker.isHex(jsonPaste.Body))
                 {
                     var longId = PasswordGenerator.Generate(Config.TOKENLENGTH);
 
