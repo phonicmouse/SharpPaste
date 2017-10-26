@@ -94,32 +94,9 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Static\css\prism.css" />
     <None Include="Static\js\index.js" />
     <None Include="Static\js\navbar.js" />
     <None Include="packages.config" />
-    <Content Include="Static\css\prism-atom-dark.css" />
-    <Content Include="Static\css\prism-base16-ateliersulphurpool.light.css" />
-    <Content Include="Static\css\prism-cb.css" />
-    <Content Include="Static\css\prism-darcula.css" />
-    <Content Include="Static\css\prism-duotone-dark.css" />
-    <Content Include="Static\css\prism-duotone-earth.css" />
-    <Content Include="Static\css\prism-duotone-forest.css" />
-    <Content Include="Static\css\prism-duotone-light.css" />
-    <Content Include="Static\css\prism-duotone-sea.css" />
-    <Content Include="Static\css\prism-duotone-space.css" />
-    <Content Include="Static\css\prism-ghcolors.css" />
-    <Content Include="Static\css\prism-hopscotch.css" />
-    <Content Include="Static\css\prism-pojoaque.css" />
-    <Content Include="Static\css\prism-vs.css" />
-    <Content Include="Static\css\prism-xonokai.css" />
-    <Content Include="Static\js\lib\aes.js" />
-    <Content Include="Static\js\lib\buffer.js" />
-    <Content Include="Static\js\lib\prism.js" />
-    <Content Include="Static\js\lib\pwgen.js" />
-    <Content Include="Static\js\lib\scrypt.js" />
-    <Content Include="Static\js\lib\setImmediate.js" />
-    <Content Include="Static\js\lib\unorm.js" />
     <Content Include="Static\js\paste.js" />
     <None Include="Views\index.sshtml" />
     <None Include="Views\master.sshtml" />

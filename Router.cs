@@ -47,18 +47,19 @@ namespace SharpPaste
 
             Post["/add"] = _ =>
             {
-                var body = this.Request.Body;
+                var body = Request.Body;
 
-                int length = (int)body.Length;
+                var length = (int) body.Length;
                 var data = new byte[length];
 
                 body.Read(data, 0, length);
 
                 var decodedPaste = JsonConvert.DeserializeObject<Paste>(Encoding.Default.GetString(data));
 
-                if (Checker.isHex(decodedPaste.Title) && Checker.isHex(decodedPaste.Body) && Checker.isHex(decodedPaste.Language))
+                if (Checker.isHex(decodedPaste.Title) && Checker.isHex(decodedPaste.Body) &&
+                    Checker.isHex(decodedPaste.Language))
                 {
-                    string longId = PasswordGenerator.Generate(Config.TOKENLENGTH);
+                    var longId = PasswordGenerator.Generate(Config.TOKENLENGTH);
 
                     using (var db = new LiteDatabase(Config.DBPATH))
                     {
@@ -81,7 +82,8 @@ namespace SharpPaste
                         ErrMsg = null
                     };
                     return JsonConvert.SerializeObject(res);
-                } else
+                }
+                else
                 {
                     var res = new AddRes
                     {
