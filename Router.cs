@@ -10,7 +10,7 @@ namespace SharpPaste
     {
         public Router()
         {
-            Get["/"] = _ => View["index"];
+            Get["/"] = parameters => View["index"];
 
             Get["/{longId}"] = parameters => View["paste"];
 
@@ -36,7 +36,7 @@ namespace SharpPaste
             //    }
             //};
 
-            Post["/add"] = _ =>
+            Post["/add"] = parameters =>
             {
                 var body = Request.Body;
 

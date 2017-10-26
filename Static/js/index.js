@@ -26,12 +26,14 @@ $("#addpaste").click(function () {
                 encryptedPaste.language = aesjs.utils.hex.fromBytes(aes.encrypt(aesjs.utils.utf8.toBytes(language)));
                 var data = JSON.stringify(encryptedPaste);
                 console.log("JSON:", data);
-                $.post("/add", data, function (responseData) {
-                    var jsonData = JSON.parse(responseData);
-                    if (jsonData.Status == "success") {
-                        window.location = location.origin + "/" + jsonData.Token + "#" + btoa(aesjs.utils.hex.fromBytes(key));
+                $.post("/add", data, function (res) {
+                    var jsonRes = JSON.parse(res);
+                    if (jsonRes.Status == "success") {
+                        window.location = location.origin + "/" + jsonRes.Token + "#" + btoa(aesjs.utils.hex.fromBytes(key));
+                    } else if (jsonRes.Status == "error") {
+                        window.alert(jsonRes.ErrMsg);
                     } else {
-                        window.alert(jsonData.ErrMsg);
+                        window.alert("Unhandled error!");
                     }
                 });
             }
