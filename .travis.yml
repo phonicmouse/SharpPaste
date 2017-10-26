@@ -9,4 +9,3 @@ mono:
  - 4.8.1
  - 4.6.2
  - 4.4.2
-sudo: required
