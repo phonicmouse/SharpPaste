@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System;
+using System.Text;
 using LiteDB;
 using MlkPwgen;
 using Nancy;
@@ -58,6 +59,7 @@ namespace SharpPaste
                         var newPaste = new Paste
                         {
                             LongId = longId,
+                            Date = DateTime.Now,
                             Title = decodedPaste.Title,
                             Body = decodedPaste.Body,
                             Language = decodedPaste.Language
