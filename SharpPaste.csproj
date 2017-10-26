@@ -98,6 +98,7 @@
     <None Include="Static\js\navbar.js" />
     <None Include="packages.config" />
     <Content Include="Static\js\paste.js" />
+    <None Include="Views\404.sshtml" />
     <None Include="Views\index.sshtml" />
     <None Include="Views\master.sshtml" />
     <None Include="Views\navbar.sshtml" />

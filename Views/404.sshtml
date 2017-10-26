@@ -1,0 +1,50 @@
+﻿<!doctype html>
+<html lang="en">
+    <head>
+        <title>404</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:800&effect=anaglyph" rel="stylesheet">
+		<style>
+		  body {
+		    font-family: 'Open Sans', sans-serif;
+		  } 
+		  #particles-js {
+		    position: absolute;
+		    width: 100%;
+		    height: 100%;
+		    z-index: 1;
+		  }
+		  h1 {
+		    font-size: 2000%;
+			text-align: center;
+		    position:absolute;
+		    z-index: 2;
+		    width: 100%;
+			height: 100%;
+		    text-align:center;
+		    color: black;
+		    top:0;
+		    left:0;
+		  }
+		  h3 {
+		    text-align: center;
+		    z-index: 3;
+		    position: absolute;
+			width: 100%;
+			bottom: 0;
+			display: block;
+		  }
+		</style>
+    </head>
+    <body>
+        <div id="particles-js"></div>
+		<h1 class="font-effect-anaglyph">404</h1>
+		<h3>Take me back to <a href="">homepage</a>...</h3>
+        <script src="/js/lib/particles.js"></script>
+        <script src="/js/lib/jquery.js"></script>
+		<script>
+		  document.body.style.overflow = 'hidden';
+		  particlesJS.load('particles-js', 'js/lib/particlesjs-config.json');
+		  $("a").attr("href", location.origin + "/")
+		</script>
+    </body>
+</html>
