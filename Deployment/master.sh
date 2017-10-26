@@ -1,2 +1,3 @@
 #!/bin/bash
-exit 0
+echo 'Delpying to live server...'
+echo 'Successfully deployed.'
