@@ -1,14 +1,6 @@
-﻿/*
- * Created by SharpDevelop.
- * User: Phonic Mouse
- * Date: 01/08/2016
- * Time: 20:09
- */
-using System;
-
-namespace SharpPaste
+﻿namespace SharpPaste
 {
-	public class Paste
+    public class Paste
 	{
 		public int Id { get; set; }
         public string LongId { get; set; }

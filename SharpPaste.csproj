@@ -129,9 +129,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Checker.cs" />
+    <Compile Include="Models\AddResModel.cs" />
     <Compile Include="StaticServeBootstrapper.cs" />
     <Compile Include="Config.cs" />
-    <Compile Include="PasteModel.cs" />
+    <Compile Include="Models\PasteModel.cs" />
     <Compile Include="Router.cs" />
   </ItemGroup>
   <ItemGroup />

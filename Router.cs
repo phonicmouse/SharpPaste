@@ -74,11 +74,22 @@ namespace SharpPaste
 
                         pastes.Insert(newPaste);
                     }
-
-                    return longId;
+                    var res = new AddRes
+                    {
+                        Status = "success",
+                        Token = longId,
+                        ErrMsg = null
+                    };
+                    return JsonConvert.SerializeObject(res);
                 } else
                 {
-
+                    var res = new AddRes
+                    {
+                        Status = "error",
+                        Token = null,
+                        ErrMsg = "Error: the paste is not encrypted with AES-256."
+                    };
+                    return JsonConvert.SerializeObject(res);
                 }
             };
         }
