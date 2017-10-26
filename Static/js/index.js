@@ -21,9 +21,10 @@ $("#addpaste").click(function () {
             } else if (key) {
                 var aes = new aesjs.ModeOfOperation.ctr(key, new aesjs.Counter(23));
                 var encryptedPaste = {};
-                encryptedPaste.title = aesjs.utils.hex.fromBytes(aes.encrypt(aesjs.utils.utf8.toBytes(title)));
-                encryptedPaste.body = aesjs.utils.hex.fromBytes(aes.encrypt(aesjs.utils.utf8.toBytes(body)));
-                encryptedPaste.language = aesjs.utils.hex.fromBytes(aes.encrypt(aesjs.utils.utf8.toBytes(language)));
+                encryptedPaste.Title = aesjs.utils.hex.fromBytes(aes.encrypt(aesjs.utils.utf8.toBytes(title)));
+                encryptedPaste.Body = aesjs.utils.hex.fromBytes(aes.encrypt(aesjs.utils.utf8.toBytes(body)));
+                encryptedPaste.Language = aesjs.utils.hex.fromBytes(aes.encrypt(aesjs.utils.utf8.toBytes(language)));
+                encryptedPaste.UploadedBy = "WEB";
                 var data = JSON.stringify(encryptedPaste);
                 console.log("JSON:", data);
                 $.post("/add", data, function (res) {

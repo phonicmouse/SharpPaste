@@ -58,9 +58,9 @@ namespace SharpPaste
 
                 body.Read(data, 0, length);
 
-                var decodedPaste = JsonConvert.DeserializeObject<Paste>(Encoding.Default.GetString(data));
+                var jsonPaste = JsonConvert.DeserializeObject<Paste>(Encoding.Default.GetString(data));
 
-                if (Checker.isHex(decodedPaste.Title) && Checker.isHex(decodedPaste.Body) && Checker.isHex(decodedPaste.Language))
+                if (Checker.isHex(jsonPaste.Title) && Checker.isHex(jsonPaste.Body) && Checker.isHex(jsonPaste.Language))
                 {
                     var longId = PasswordGenerator.Generate(Config.TOKENLENGTH);
 
@@ -72,9 +72,10 @@ namespace SharpPaste
                         {
                             LongId = longId,
                             Date = DateTime.Now,
-                            Title = decodedPaste.Title,
-                            Body = decodedPaste.Body,
-                            Language = decodedPaste.Language
+                            Title = jsonPaste.Title,
+                            Body = jsonPaste.Body,
+                            Language = jsonPaste.Language,
+                            UploadedBy = jsonPaste.UploadedBy
                         };
 
                         pastes.Insert(newPaste);
