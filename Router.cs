@@ -12,16 +12,7 @@ namespace SharpPaste
         {
             Get["/"] = _ => View["index"];
 
-            Get["/{longId}"] = parameters =>
-            {
-                return View["paste"];
-                //string longId = parameters.longId;
-                //using (var db = new LiteDatabase(Config.DBPATH))
-                //{
-                //    var result = db.GetCollection<Paste>("pastes").FindOne(Query.EQ("LongId", longId));
-                //    //check if paste exists (todo)
-                //}
-            };
+            Get["/{longId}"] = parameters => View["paste"];
 
             Get["/json/{longId}"] = parameters =>
             {
@@ -56,8 +47,7 @@ namespace SharpPaste
 
                 var decodedPaste = JsonConvert.DeserializeObject<Paste>(Encoding.Default.GetString(data));
 
-                if (Checker.isHex(decodedPaste.Title) && Checker.isHex(decodedPaste.Body) &&
-                    Checker.isHex(decodedPaste.Language))
+                if (Checker.isHex(decodedPaste.Title) && Checker.isHex(decodedPaste.Body) && Checker.isHex(decodedPaste.Language))
                 {
                     var longId = PasswordGenerator.Generate(Config.TOKENLENGTH);
 

@@ -27,8 +27,12 @@ $("#addpaste").click(function () {
                 var data = JSON.stringify(encryptedPaste);
                 console.log("JSON:", data);
                 $.post("/add", data, function (responseData) {
-                    var pasteToken = new String(responseData);
-                    window.location = location.origin + "/" + pasteToken + "#" + btoa(aesjs.utils.hex.fromBytes(key));
+                    var jsonData = JSON.parse(responseData);
+                    if (jsonData.Status == "success") {
+                        window.location = location.origin + "/" + jsonData.Token + "#" + btoa(aesjs.utils.hex.fromBytes(key));
+                    } else {
+                        window.alert(jsonData.ErrMsg);
+                    }
                 });
             }
         });
