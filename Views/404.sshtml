@@ -1,7 +1,7 @@
 ﻿<!doctype html>
 <html lang="en">
     <head>
-        <title>404</title>
+        <title>Sorry, we can't find your paste...</title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:800&effect=anaglyph" rel="stylesheet">
 		<style>
 		  body {
@@ -29,21 +29,22 @@
 		    text-align: center;
 		    z-index: 3;
 		    position: absolute;
-			width: 100%;
-			bottom: 0;
-			display: block;
+			  width: 100%;
+			  bottom: 0;
+			  display: block;
 		  }
 		</style>
     </head>
     <body>
         <div id="particles-js"></div>
-		<h1 class="font-effect-anaglyph">404</h1>
-		<h3>Take me back to <a href="" id="homepage-link">homepage</a>...</h3>
+		    <h1 class="font-effect-anaglyph">404</h1>
+        <h3 style="z-index:2; top:0;">It seems that your paste has been lost in the encryption universe...</h3>
+		    <h3>Take me back to <a href="" id="homepage-link">homepage</a></h3>
         <script src="/js/lib/particles.js"></script>
-		<script>
-		  document.body.style.overflow = 'hidden';
-		  particlesJS.load('particles-js', 'js/lib/particlesjs-config.json');
-			document.getElementById("homepage-link").href=location.origin + "/";
-		</script>
+		    <script>
+		      document.body.style.overflow = 'hidden';
+		      particlesJS.load('particles-js', 'js/lib/particlesjs-config.json');
+			    document.getElementById("homepage-link").href=location.origin + "/";
+		    </script>
     </body>
 </html>
