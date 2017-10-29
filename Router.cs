@@ -2,6 +2,7 @@
 using System.Text;
 using LiteDB;
 using EasyEncryption;
+using Multiformats.Base;
 using Nancy;
 using Newtonsoft.Json;
 
@@ -58,14 +59,14 @@ namespace SharpPaste
 
                 var jsonPaste = JsonConvert.DeserializeObject<Paste>(Encoding.Default.GetString(data));
 
-                if (Checker.isHex(jsonPaste.Title) && Checker.isHex(jsonPaste.Body))
+                if (HexUtils.isHex(jsonPaste.Title) && HexUtils.isHex(jsonPaste.Body))
                 {
                     using (var db = new LiteDatabase(Config.DBPATH))
                     {
                         var pastes = db.GetCollection<Paste>("pastes");
 
                         string hashSeed = pastes.Count().ToString() + jsonPaste.Date.ToString() + jsonPaste.Title + jsonPaste.Body + jsonPaste.Language;
-                        string longId = SHA.ComputeSHA256Hash(hashSeed);
+                        string longId = Multibase.Base64.Encode(HexUtils.toByteArray(SHA.ComputeSHA256Hash(hashSeed)));
 
                         var newPaste = new Paste
                         {
