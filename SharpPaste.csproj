@@ -105,12 +105,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Checker.cs" />
-<<<<<<< HEAD
     <Compile Include="Models\UploadResponseModel.cs" />
-=======
-    <Compile Include="PageNotFoundHandler.cs" />
-    <Compile Include="Models\AddResModel.cs" />
->>>>>>> master
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="Models\PasteModel.cs" />
