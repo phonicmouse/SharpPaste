@@ -28,6 +28,7 @@
 
 <script src="/js/lib/aes.js"></script>
 <script src="/js/lib/clipboard.js"></script>
+<script>var encryptedTitle = "@Model.Title"; var encryptedBody = "@Model.Body"</script>
 <script src="/js/paste.js"></script>
 
 @EndSection
