@@ -19,7 +19,13 @@ namespace SharpPaste
                 {
                     var collection = db.GetCollection<Paste>("pastes");
                     var paste = collection.FindOne(Query.EQ("LongId", parameters.longId.ToString()));
+<<<<<<< HEAD
                     if (paste == null) return View["404"];
+=======
+                    if (paste == null) return HttpStatusCode.NotFound;
+                    paste.WebViews += 1;
+                    collection.Update(paste);
+>>>>>>> master
                     return View["paste", paste];
                 }
             };

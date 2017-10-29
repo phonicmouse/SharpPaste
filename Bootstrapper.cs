@@ -1,18 +1,15 @@
-﻿/*
- * Created by SharpDevelop.
- * User: Phonic Mouse
- * Date: 02/08/2016
- * Time: 17:32
- */
- 
-using Nancy;
+﻿using Nancy;
 using Nancy.Conventions;
+using System.Configuration;
+using System.Linq;
+using Nancy.Bootstrapper;
+using Nancy.TinyIoc;
 
 namespace SharpPaste
 {
 	public class Bootstrapper : DefaultNancyBootstrapper
 	{
-		protected override void ConfigureConventions(NancyConventions nancyConventions)
+        protected override void ConfigureConventions(NancyConventions nancyConventions)
 		{
             nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddFile("/css/bootstrap.css", @"packages\bootstrap.3.3.7\content\Content\bootstrap.min.css")); 
             nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddFile("/css/bootstrap-flat.css", @"packages\Bootstrap.Flat.3.3.4\Content\Content\bootstrap-flat.min.css")); 
