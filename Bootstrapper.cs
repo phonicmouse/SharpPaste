@@ -10,7 +10,7 @@ using Nancy.Conventions;
 
 namespace SharpPaste
 {
-	public class StaticServeBootstrapper : DefaultNancyBootstrapper
+	public class Bootstrapper : DefaultNancyBootstrapper
 	{
 		protected override void ConfigureConventions(NancyConventions nancyConventions)
 		{
