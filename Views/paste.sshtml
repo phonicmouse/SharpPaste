@@ -4,6 +4,8 @@
 
 <link rel="stylesheet" type="" href="/css/prism.css">
 
+<script>var encryptedTitle = "@Model.Title"; var encryptedBody = "@Model.Body"</script>
+
 @EndSection
 
 @Section['Content']
