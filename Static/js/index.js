@@ -29,7 +29,7 @@ $("#addpaste").click(function () {
                 $.post("/upload", data, function (res) {
                     var jsonRes = JSON.parse(res);
                     if (jsonRes.Status == "success") {
-                        window.location = location.origin + "/" + jsonRes.Token + "#" + btoa(aesjs.utils.hex.fromBytes(key));
+                        window.location = location.origin + "/" + jsonRes.LongId + "#" + btoa(aesjs.utils.hex.fromBytes(key));
                     } else if (jsonRes.Status == "error") {
                         window.alert(jsonRes.ErrMsg);
                     } else {

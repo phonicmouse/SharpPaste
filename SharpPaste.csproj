@@ -59,9 +59,6 @@
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CryptSharp.SCryptSubset, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\SCrypt.2.0.0.2\lib\CryptSharp.SCryptSubset.dll</HintPath>
-    </Reference>
     <Reference Include="EasyEncryption, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\EasyEncryption.1.0.2\lib\EasyEncryption.dll</HintPath>
     </Reference>
@@ -91,9 +88,6 @@
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml" />
-    <Reference Include="MlkPwgen">
-      <HintPath>packages\MlkPwgen.0.3.0\lib\net45\MlkPwgen.dll</HintPath>
-    </Reference>
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>

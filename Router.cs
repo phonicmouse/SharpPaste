@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 using LiteDB;
-using MlkPwgen;
+using EasyEncryption;
 using Nancy;
 using Newtonsoft.Json;
 
@@ -20,8 +20,6 @@ namespace SharpPaste
                     var collection = db.GetCollection<Paste>("pastes");
                     var paste = collection.FindOne(Query.EQ("LongId", parameters.longId.ToString()));
                     if (paste == null) return View["404"];
-                    paste.WebViews += 1;
-                    collection.Update(paste);
                     return View["paste", paste];
                 }
             };
@@ -33,23 +31,21 @@ namespace SharpPaste
                     var collection = db.GetCollection<Paste>("pastes");
                     var paste = collection.FindOne(Query.EQ("LongId", parameters.longId.ToString()));
                     if (paste == null) return JsonConvert.SerializeObject((dynamic) null);
-                    paste.JsonHits += 1;
-                    collection.Update(paste);
                     return JsonConvert.SerializeObject(paste);
                 }
             };
 
-            //Get["/raw/{longId}"] = parameters =>
-            //{
-            //    string longId = parameters.longId;
-            //
-            //    using (var db = new LiteDatabase(Config.DBPATH))
-            //    {
-            //        var result = db.GetCollection<Paste>("pastes").FindOne(Query.EQ("LongId", longId));
-            //
-            //        return result.Body;
-            //    }
-            //};
+            Get["/raw/{longId}"] = parameters =>
+            {
+                string longId = parameters.longId;
+            
+                using (var db = new LiteDatabase(Config.DBPATH))
+                {
+                    var result = db.GetCollection<Paste>("pastes").FindOne(Query.EQ("LongId", longId));
+            
+                    return result.Body;
+                }
+            };
 
             Post["/upload"] = parameters =>
             {
@@ -68,9 +64,8 @@ namespace SharpPaste
                     {
                         var pastes = db.GetCollection<Paste>("pastes");
 
-                        var hashSeed = pastes.Count().ToString() + jsonPaste.Date.ToString() + PasswordGenerator.GenerateComplex(Config.LONGIDLENGTH);
-                        var hash = Hasher.getHash(hashSeed);
-                        var longId = hash;
+                        string hashSeed = pastes.Count().ToString() + jsonPaste.Date.ToString() + jsonPaste.Title + jsonPaste.Body + jsonPaste.Language;
+                        string longId = SHA.ComputeSHA256Hash(hashSeed);
 
                         var newPaste = new Paste
                         {
@@ -86,8 +81,7 @@ namespace SharpPaste
                         var res = new UploadResponse
                         {
                             Status = "success",
-                            LongId = longId,
-                            ErrMsg = null
+                            LongId = longId
                         };
                         return JsonConvert.SerializeObject(res);
                     }
@@ -97,7 +91,6 @@ namespace SharpPaste
                     var res = new UploadResponse
                     {
                         Status = "error",
-                        LongId = null,
                         ErrMsg = "Error: the paste is not encrypted with AES-256."
                     };
                     return JsonConvert.SerializeObject(res);
