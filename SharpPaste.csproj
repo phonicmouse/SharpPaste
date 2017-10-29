@@ -62,6 +62,9 @@
     <Reference Include="CryptSharp.SCryptSubset, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\SCrypt.2.0.0.2\lib\CryptSharp.SCryptSubset.dll</HintPath>
     </Reference>
+    <Reference Include="EasyEncryption, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\EasyEncryption.1.0.2\lib\EasyEncryption.dll</HintPath>
+    </Reference>
     <Reference Include="LiteDB, Version=4.0.0.0, Culture=neutral, PublicKeyToken=4ee40123013c9f27, processorArchitecture=MSIL">
       <HintPath>packages\LiteDB.4.0.0\lib\net40\LiteDB.dll</HintPath>
     </Reference>
@@ -107,7 +110,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Checker.cs" />
-    <Compile Include="Models\AddResModel.cs" />
+    <Compile Include="Models\UploadResponseModel.cs" />
     <Compile Include="StaticServeBootstrapper.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="Models\PasteModel.cs" />

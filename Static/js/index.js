@@ -26,7 +26,7 @@ $("#addpaste").click(function () {
                 encryptedPaste.UploadedBy = "WEB";
                 var data = JSON.stringify(encryptedPaste);
                 console.log("JSON:", data);
-                $.post("/add", data, function (res) {
+                $.post("/upload", data, function (res) {
                     var jsonRes = JSON.parse(res);
                     if (jsonRes.Status == "success") {
                         window.location = location.origin + "/" + jsonRes.Token + "#" + btoa(aesjs.utils.hex.fromBytes(key));

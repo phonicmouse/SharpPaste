@@ -51,7 +51,7 @@ namespace SharpPaste
             //    }
             //};
 
-            Post["/add"] = parameters =>
+            Post["/upload"] = parameters =>
             {
                 var body = Request.Body;
 
@@ -64,11 +64,13 @@ namespace SharpPaste
 
                 if (Checker.isHex(jsonPaste.Title) && Checker.isHex(jsonPaste.Body))
                 {
-                    var longId = PasswordGenerator.Generate(Config.TOKENLENGTH);
-
                     using (var db = new LiteDatabase(Config.DBPATH))
                     {
                         var pastes = db.GetCollection<Paste>("pastes");
+
+                        var hashSeed = pastes.Count().ToString() + jsonPaste.Date.ToString() + PasswordGenerator.GenerateComplex(Config.LONGIDLENGTH);
+                        var hash = Hasher.getHash(hashSeed);
+                        var longId = hash;
 
                         var newPaste = new Paste
                         {
@@ -76,26 +78,26 @@ namespace SharpPaste
                             Date = DateTime.Now,
                             Title = jsonPaste.Title,
                             Body = jsonPaste.Body,
-                            Language = jsonPaste.Language,
-                            UploadedBy = jsonPaste.UploadedBy
+                            Language = jsonPaste.Language
                         };
 
                         pastes.Insert(newPaste);
+
+                        var res = new UploadResponse
+                        {
+                            Status = "success",
+                            LongId = longId,
+                            ErrMsg = null
+                        };
+                        return JsonConvert.SerializeObject(res);
                     }
-                    var res = new AddRes
-                    {
-                        Status = "success",
-                        Token = longId,
-                        ErrMsg = null
-                    };
-                    return JsonConvert.SerializeObject(res);
                 }
                 else
                 {
-                    var res = new AddRes
+                    var res = new UploadResponse
                     {
                         Status = "error",
-                        Token = null,
+                        LongId = null,
                         ErrMsg = "Error: the paste is not encrypted with AES-256."
                     };
                     return JsonConvert.SerializeObject(res);
