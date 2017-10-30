@@ -8,7 +8,6 @@ A simple and Open-Source C# ASP.NET/NancyFX pastebin backed by AES-256, made wit
 * Mono - C# Cross-Platform Compiler
 * NancyFX - Open Source Web Framework
 * LiteDB - Embedded Database
-* MlkPwGen - Strong password generator used for paste token
 * [Strong PwGen](https://gist.github.com/jacobbuck/4247179) - Strong key generator
 * Scrypt.js - Key hashing algorithm (used for AES256 keys)
 * AES-JS - Library to encrypt data using AES directly in your browser
@@ -16,7 +15,6 @@ A simple and Open-Source C# ASP.NET/NancyFX pastebin backed by AES-256, made wit
 * Bootstrap Flat Theme - UI Theme
 * jQuery - DOM Framework
 * Prism - Syntax Highlighter
-* Prism Themes - Syntax Highlighter Theming
 
 ## Installation
 
