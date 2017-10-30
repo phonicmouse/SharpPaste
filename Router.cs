@@ -51,7 +51,6 @@ namespace SharpPaste
             Post["/upload"] = parameters =>
             {
                 var body = Request.Body;
-
                 var length = (int) body.Length;
                 var data = new byte[length];
 
@@ -66,7 +65,7 @@ namespace SharpPaste
                         var pastes = db.GetCollection<Paste>("pastes");
 
                         string hashSeed = pastes.Count().ToString() + jsonPaste.Date.ToString() + jsonPaste.Title + jsonPaste.Body + jsonPaste.Language;
-                        string longId = Multibase.Base64.Encode(HexUtils.toByteArray(SHA.ComputeSHA256Hash(hashSeed)));
+                        string longId = Multibase.Base64.Encode(HexUtils.toByteArray(SHA.ComputeSHA256Hash(hashSeed)), false, true);
 
                         var newPaste = new Paste
                         {
