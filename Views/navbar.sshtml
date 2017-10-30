@@ -5,6 +5,10 @@
             <a class="navbar-brand" id="navbarbrand" href="">SharpPaste</a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <button type="button" class="btn btn-warning navbar-btn navbar-right" id="clonepastenavbutton" aria-label="Left Align" hidden>
+                <span class="glyphicon glyphicon-copy"></span>
+                Clone Paste
+            </button>
             <button type="button" class="btn btn-info navbar-btn navbar-right" id="newpastenavbutton" aria-label="Left Align">
                 <span class="glyphicon glyphicon-plus"></span>
                 New Paste
