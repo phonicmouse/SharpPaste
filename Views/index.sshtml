@@ -30,9 +30,21 @@ SharpPaste
                     <textarea type="text" class="form-control" rows="20" style="resize: vertical;" name="body" id="body" placeholder="The text that you want to upload..."></textarea>
                 </div>
                 <div class="form-group">
-                    <label for="languageSelection">Language</label>
+                    <label for="languageSelection">Highlighting</label>
                     <select class="form-control" id="languageSelection">
                         <option value="none">None</option>
+                        <option disabled><strong>Most used:</strong></option>
+                        <option value="clike">C-Like</option>
+						<option value="markup">Links</option>
+                        <option value="markup">Markup (HTML, etc.)</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="ruby">Ruby</option>
+                        <option value="php">PHP</option>
+                        <option value="bash">Bash</option>
+                        <option value="perl">Perl</option>
+						<option disabled><strong>All the others in alphabetical order:</strong></option>
 						<option value="abap">ABAP</option>
 						<option value="actionscript">ActionScript</option>
 						<option value="ada">Ada</option>
@@ -51,7 +63,6 @@ SharpPaste
 						<option value="brainfuck">Brainfuck</option>
 						<option value="bro">Bro</option>
 						<option value="c">C</option>
-						<option value="clike">C-Like</option>
 						<option value="cpp">C++</option>
 						<option value="csharp">C#</option>
 						<option value="coffeescript">CoffeeScript</option>
@@ -78,6 +89,7 @@ SharpPaste
 						<option value="handlebars">Handlebars</option>
 						<option value="haskell">Haskell</option>
 						<option value="haxe">Haxe</option>
+                        <option value="markup">HTML</option>
 						<option value="http">HTTP</option>
 						<option value="icon">Icon</option>
 						<option value="inform7">Inform 7</option>
@@ -97,7 +109,6 @@ SharpPaste
 						<option value="lua">Lua</option>
 						<option value="makefile">Makefile</option>
 						<option value="markdown">Markdown</option>
-						<option value="markup">Markup</option>
 						<option value="matlab">MATLAB</option>
 						<option value="mel">MEL</option>
 						<option value="mizar">Mizar</option>
