@@ -3,7 +3,7 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/phonicmouse/SharpPaste/master/LICENSE)
 [![Gitter](https://img.shields.io/badge/chat_on-gitter-green.svg?style=flat-square&logo=gitter-white&colorB=ed1965)](https://gitter.im/SharpPasteZ)
 
-A simple and Open-Source C# ASP.NET/NancyFX pastebin backed by AES-256, made with :heart: in Italy :it:.
+A simple and Open-Source C# ASP.NET/NancyFX pastebin backed by AES-256 client-side, made with :heart: in Italy :it:.
 
 ## Software Used
 * Mono - C# Cross-Platform Compiler
