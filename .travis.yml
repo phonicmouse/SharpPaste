@@ -21,7 +21,7 @@ mono:
 notifications:
   webhooks:
     urls:
-      - https://webhooks.gitter.im/e/c0f29c2d4ba311085d77
+      - https://webhooks.gitter.im/e/8800e363e8878f251a5c
     on_success: change
     on_failure: always
     on_start: never
