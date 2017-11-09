@@ -1,4 +1,6 @@
 version: 0.1.{build}
+before_build:
+  - nuget restore
 build:
   project: SharpPaste.sln
   verbosity: normal
