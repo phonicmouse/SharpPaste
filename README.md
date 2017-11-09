@@ -1,5 +1,6 @@
 # SharpPaste
 [![Build Status](https://img.shields.io/travis/phonicmouse/SharpPaste.svg?style=flat-square)](https://travis-ci.org/phonicmouse/SharpPaste)
+[![AppVeyor](https://img.shields.io/appveyor/ci/phonicmouse/sharppaste.svg?style=flat-square&logo=appveyor)](https://ci.appveyor.com/project/phonicmouse/sharppaste)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/phonicmouse/SharpPaste/master/LICENSE)
 [![Gitter](https://img.shields.io/badge/chat_on-gitter-green.svg?style=flat-square&logo=gitter-white&colorB=ed1965)](https://gitter.im/SharpPasteZ)
 
