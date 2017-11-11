@@ -58,14 +58,14 @@ namespace SharpPaste
 
                 var jsonPaste = JsonConvert.DeserializeObject<Paste>(Encoding.Default.GetString(data));
 
-                if (HexUtils.isHex(jsonPaste.Title) && HexUtils.isHex(jsonPaste.Body))
+                if (HexUtils.IsHex(jsonPaste.Title) && HexUtils.IsHex(jsonPaste.Body))
                 {
                     using (var db = new LiteDatabase(Config.DBPATH))
                     {
                         var pastes = db.GetCollection<Paste>("pastes");
 
                         string hashSeed = pastes.Count().ToString() + jsonPaste.Date.ToString() + jsonPaste.Title + jsonPaste.Body + jsonPaste.Language;
-                        string longId = Multibase.Base64.Encode(HexUtils.toByteArray(SHA.ComputeSHA256Hash(hashSeed)), false, true);
+                        string longId = Multibase.Base64.Encode(HexUtils.ToByteArray(SHA.ComputeSHA256Hash(hashSeed)), false, true);
 
                         var newPaste = new Paste
                         {
