@@ -1,0 +1,13 @@
+version: '#{build}'
+before_build:
+- cmd: nuget restore
+build:
+  project: SharpPaste.sln
+  verbosity: normal
+notifications:
+- provider: Webhook
+  url: https://webhooks.gitter.im/e/fb674f486230dec095e6
+  method: POST
+  on_build_success: true
+  on_build_failure: true
+  on_build_status_changed: true

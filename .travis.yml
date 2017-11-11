@@ -3,7 +3,7 @@ language: csharp
 solution: SharpPaste.sln
 mono:
  - latest
- - 5.4.0
+ - 5.4.1
  - 5.2.0
  - 5.0.1
  - 4.8.1
@@ -18,3 +18,11 @@ mono:
 #    script: ./Deployment/master.sh
 #    on:
 #      branch: master
+notifications:
+  webhooks:
+    urls:
+      - https://webhooks.gitter.im/e/8800e363e8878f251a5c
+    on_success: change
+    on_failure: always
+    on_start: never
+    
