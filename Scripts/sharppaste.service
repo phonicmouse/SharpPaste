@@ -7,7 +7,7 @@ ConditionDirectoryNotEmpty=/var/www/sharppaste
 Type=simple
 User=xsp
 Group=xsp
-ExecStart=/usr/bin/xsp4 --port 9000 --address 127.0.0.1 --nonstop --root=/var/www/sharppaste --applications=/:.
+ExecStart=/usr/bin/xsp4 --port 9000 --address 127.0.0.1 --nonstop --applications=/:/var/www/sharppaste
 Restart=on-failure
 
 [Install]
