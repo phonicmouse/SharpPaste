@@ -57,8 +57,3 @@ Cross-platform C# pastebin with client-side AES-256 encryption that just works, 
 | 1.x.x          | :x:                |
 
 See [Travis CI](https://travis-ci.org/phonicmouse/SharpPaste) for more details.
-
-
-## Mirror
-
-Repository mirror: https://git.piratenet.work/phonicmouse/SharpPaste
