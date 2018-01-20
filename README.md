@@ -3,7 +3,6 @@
 [![Travis CI](https://img.shields.io/travis/phonicmouse/SharpPaste.svg?style=flat-square&logo=travis)](https://travis-ci.org/phonicmouse/SharpPaste)
 [![AppVeyor](https://img.shields.io/appveyor/ci/phonicmouse/sharppaste.svg?style=flat-square&logo=appveyor)](https://ci.appveyor.com/project/phonicmouse/sharppaste)
 [![Gitter](https://img.shields.io/badge/chat_on-gitter-green.svg?style=flat-square&logo=gitter-white&colorB=ed1965)](https://gitter.im/SharpPasteZ)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fphonicmouse%2FSharpPaste.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fphonicmouse%2FSharpPaste?ref=badge_shield)
 
 Cross-platform C# pastebin with client-side AES-256 encryption that just works, made with :heart: in Italy :it:.
 
