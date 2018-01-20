@@ -17,5 +17,5 @@
 *.RTF	 diff=astextplain
 
 # Linguist vendored
-[Ss]tatic/js/lib/* linguist-vendored
+[Ss]tatic/js/* linguist-vendored
 [Ss]tatic/css/* linguist-vendored
