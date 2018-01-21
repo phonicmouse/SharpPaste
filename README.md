@@ -1,10 +1,10 @@
 # SharpPaste
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/phonicmouse/SharpPaste/master/LICENSE)
-[![Travis CI](https://img.shields.io/travis/phonicmouse/SharpPaste.svg?style=flat-square)](https://travis-ci.org/phonicmouse/SharpPaste)
+[![Travis CI](https://img.shields.io/travis/phonicmouse/SharpPaste.svg?style=flat-square&logo=travis)](https://travis-ci.org/phonicmouse/SharpPaste)
 [![AppVeyor](https://img.shields.io/appveyor/ci/phonicmouse/sharppaste.svg?style=flat-square&logo=appveyor)](https://ci.appveyor.com/project/phonicmouse/sharppaste)
 [![Gitter](https://img.shields.io/badge/chat_on-gitter-green.svg?style=flat-square&logo=gitter-white&colorB=ed1965)](https://gitter.im/SharpPasteZ)
 
-A simple and Open-Source C# ASP.NET/NancyFX pastebin backed by AES-256 client-side, made with :heart: in Italy :it:.
+Cross-platform C# pastebin with client-side AES-256 encryption that just works, made with :heart: in Italy :it:.
 
 ## Software Used
 * Mono - C# Cross-Platform Compiler
@@ -45,6 +45,7 @@ A simple and Open-Source C# ASP.NET/NancyFX pastebin backed by AES-256 client-si
 | Version        | Supported          |
 |:--------------:|:------------------:|
 | latest (5.4.1) | :white_check_mark: |
+| 5.4.1          | :white_check_mark: |
 | 5.2.0          | :white_check_mark: |
 | 5.0.1          | :white_check_mark: |
 | 4.8.1          | :white_check_mark: |
@@ -57,3 +58,7 @@ A simple and Open-Source C# ASP.NET/NancyFX pastebin backed by AES-256 client-si
 | 1.x.x          | :x:                |
 
 See [Travis CI](https://travis-ci.org/phonicmouse/SharpPaste) for more details.
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fphonicmouse%2FSharpPaste.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fphonicmouse%2FSharpPaste?ref=badge_large)
