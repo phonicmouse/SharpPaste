@@ -194,5 +194,8 @@ SharpPaste
             </div>
         </div>
     </div>
+    <div class="container-fluid">
+        <a class="btn btn-link btn-lg" href="https://github.com/phonicmouse/SharpPaste" role="button">GitHub</a>
+    </div>
 </div>
 @EndSection
