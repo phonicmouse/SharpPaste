@@ -1,13 +1,13 @@
 [Unit]
 Description=SharpPaste Server
 Wants=network.target
-ConditionDirectoryNotEmpty=/var/www/sharppaste
+ConditionDirectoryNotEmpty=/opt/sharppaste
 
 [Service]
 Type=simple
 User=xsp
 Group=xsp
-ExecStart=/usr/bin/xsp4 --port 9000 --address 127.0.0.1 --nonstop --applications=/:/var/www/sharppaste
+ExecStart=/usr/bin/xsp4 --port 9000 --address 127.0.0.1 --nonstop --applications=/:/opt/sharppaste
 Restart=on-failure
 
 [Install]
