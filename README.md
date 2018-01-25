@@ -40,7 +40,7 @@ Or install by *hand*:
 - Download nuget packages: `nuget restore`
 - Build app: `msbuild`
 - Create database directory: `mkdir -p /opt/sharppaste/Databases`
-- Test app by running `xsp` and then check at http://127.0.0.1:9000 if everything works
+- Test app by running `xsp` and then check by opening http://127.0.0.1:9000 in your browser if everything works
 - Add xsp user to run it in background: `sudo useradd -d /opt/sharppaste -r xsp`
 - Fix permissions: `sudo chmod -R xsp:xsp /opt/sharppaste`
 - Copy `sharppaste.service` to systemd's services directory: `sudo cp /opt/sharppaste/Scripts/sharppaste.service /etc/systemd/system/sharppaste.service`
