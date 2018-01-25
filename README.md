@@ -11,27 +11,43 @@ Cross-platform C# pastebin with client-side AES-256 encryption that just works, 
 
 ### Linux
 **Dependencies:**
-* Mono Runtime (see [Supported Mono Versions](#supported-mono-versions) for a full list of supported versions)
-* XSP4 (see [hosting asp.net with xsp](http://www.mono-project.com/docs/web/aspnet/#aspnet-hosting-with-xsp) for more details)
+- Mono Runtime (see [Supported Mono Versions](#supported-mono-versions) for a full list of supported versions)
+- XSP4 (see [hosting asp.net with xsp](http://www.mono-project.com/docs/web/aspnet/#aspnet-hosting-with-xsp) for more details)
 
 
 **Instructions:**
+
+Use our simple one-liner installer (currently supports Ubuntu, Debian, Raspbian and CentOS)[**TODO**]:
+```
+curl https://get.sharppaste.nl | bash
+```
+
+Or install by *hand*:
+- Add Mono repositories for your distro:
+  - [Ubuntu](http://www.mono-project.com/download/#download-lin-ubuntu)
+  - [Debian](http://www.mono-project.com/download/#download-lin-debian)
+  - [Raspbian](http://www.mono-project.com/download/#download-lin-raspbian)
+  - [Centos](http://www.mono-project.com/download/#download-lin-centos)
+- Install `xsp` package:
+  - Ubuntu, Debian and Raspbian: `sudo apt install -y mono-xsp4`
+  - CentOS: `sudo yum install -y xsp`
+- Install 
 
 
 ## Specifics
 
 ### Software Used
 
-* Mono - C# Cross-Platform Compiler
-* NancyFX - Open Source Web Framework
-* LiteDB - Embedded Database
-* [Strong PwGen](https://gist.github.com/jacobbuck/4247179) - Strong key generator
-* Scrypt.js - Key hashing algorithm (used for AES256 keys)
-* AES-JS - Library to encrypt data using AES directly in your browser
-* Bootstrap - UI Framework
-* Bootstrap Flat Theme - UI Theme
-* jQuery - DOM Framework
-* Prism - Syntax Highlighter
+- Mono - C# Cross-Platform Compiler
+- NancyFX - Open Source Web Framework
+- LiteDB - Embedded Database
+- [Strong PwGen](https://gist.github.com/jacobbuck/4247179) - Strong key generator
+- Scrypt.js - Key hashing algorithm (used for AES256 keys)
+- AES-JS - Library to encrypt data using AES directly in your browser
+- Bootstrap 3 - UI Framework
+- Bootstrap Flat Theme - UI Theme
+- jQuery - DOM Framework
+- Prism - Syntax Highlighter
 
 ### Supported Mono Versions
 
