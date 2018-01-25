@@ -12,6 +12,7 @@ Cross-platform C# pastebin with client-side AES-256 encryption that just works, 
 ### Linux
 **Dependencies:**
 - Mono Runtime (see [Supported Mono Versions](#supported-mono-versions) for a full list of supported versions)
+- Nuget (to automatically download all required C# dependencies)
 - XSP4 (see [hosting asp.net with xsp](http://www.mono-project.com/docs/web/aspnet/#aspnet-hosting-with-xsp) for more details)
 
 
@@ -28,11 +29,13 @@ Or install by *hand*:
   - [Debian](http://www.mono-project.com/download/#download-lin-debian)
   - [Raspbian](http://www.mono-project.com/download/#download-lin-raspbian)
   - [Centos](http://www.mono-project.com/download/#download-lin-centos)
-- Install `xsp` package:
-  - Ubuntu, Debian and Raspbian: `sudo apt install -y mono-xsp4`
-  - CentOS: `sudo yum install -y xsp`
-- Install 
-
+- Install required packages:
+  - Ubuntu, Debian and Raspbian: `sudo apt install -y mono-xsp nuget`
+  - CentOS: `sudo yum install -y xsp nuget`
+- Download latest release:
+  - From our [releases page](https://github.com/phonicmouse/SharpPaste/releases) (be sure to download the file ending with .tar.gz)
+  - From our website `wget https://get.sharppaste.nl/latest -O latest.tar.gz`
+- 
 
 ## Specifics
 
