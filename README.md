@@ -6,7 +6,22 @@
 
 Cross-platform C# pastebin with client-side AES-256 encryption that just works, made with :heart: in Italy :it:.
 
-## Software Used
+
+## Installation
+
+### Linux
+**Dependencies:**
+* Mono Runtime (see [Supported Mono Versions](#supported-mono-versions) for a full list of supported versions)
+* XSP4 (see [hosting asp.net with xsp](http://www.mono-project.com/docs/web/aspnet/#aspnet-hosting-with-xsp) for more details)
+
+
+**Instructions:**
+
+
+## Specifics
+
+### Software Used
+
 * Mono - C# Cross-Platform Compiler
 * NancyFX - Open Source Web Framework
 * LiteDB - Embedded Database
@@ -18,29 +33,7 @@ Cross-platform C# pastebin with client-side AES-256 encryption that just works, 
 * jQuery - DOM Framework
 * Prism - Syntax Highlighter
 
-## Installation
-
-### Linux/Mac OS X
-**Dependencies:**
-* Mono (see [Supported Mono Versions](#supported-mono-versions) for a full list of supported versions)
-* XSP ( [latest](https://github.com/mono/xsp) version should be fine)
-
-
-**Instructions:**
-1. Install ```mono``` ([Linux](http://www.mono-project.com/docs/getting-started/install/linux/) or [OS X](http://www.mono-project.com/docs/getting-started/install/mac/))
-2. Install [```xsp```](https://github.com/mono/xsp/blob/master/INSTALL)
-3. Install ```nuget```
-4. Clone SharpPaste repository ```git clone https://github.com/phonicmouse/SharpPaste.git```
-5. Enter repo's directory ```cd SharpPaste```
-6. Restore packages ```nuget restore```
-7. Build Solution ```xbuild SharpPaste.sln```
-8. Start [XSP Web Server](http://www.mono-project.com/docs/web/aspnet/#aspnet-hosting-with-xsp) ```xsp``` or ```xsp4``` if you get errors with the first one
-9. Done. Enjoy! :stuck_out_tongue_winking_eye:
-
-
-## Specifics
-
-#### Supported Mono Versions
+### Supported Mono Versions
 
 | Version        | Supported          |
 |:--------------:|:------------------:|
@@ -60,5 +53,5 @@ Cross-platform C# pastebin with client-side AES-256 encryption that just works, 
 See [Travis CI](https://travis-ci.org/phonicmouse/SharpPaste) for more details.
 
 
-## License
+### License
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fphonicmouse%2FSharpPaste.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fphonicmouse%2FSharpPaste?ref=badge_large)
