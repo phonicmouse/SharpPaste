@@ -33,10 +33,21 @@ Or install by *hand*:
   - Ubuntu, Debian and Raspbian: `sudo apt install -y mono-xsp nuget`
   - CentOS: `sudo yum install -y xsp nuget`
 - Download latest release:
-  - From our [releases page](https://github.com/phonicmouse/SharpPaste/releases) (be sure to download the file ending with .tar.gz)
-  - From our website `wget https://get.sharppaste.nl/latest -O latest.tar.gz`
-- 
-
+  - From our website `wget https://get.sharppaste.nl/latest.tar.gz`
+  - Or, from our [releases page](https://github.com/phonicmouse/SharpPaste/releases) (be sure to download the file called latest.tar.gz)
+- Extract archive to `/opt`: `tar -xvf latest.tar.gz -C /opt/sharppaste`
+- Enter app's directory: `cd /opt/sharppaste`
+- Download nuget packages: `nuget restore`
+- Build app: `msbuild`
+- Create database directory: `mkdir -p /opt/sharppaste/Databases`
+- Test app by running `xsp` and then check at http://127.0.0.1:9000 if everything works
+- Add xsp user to run it in background: `sudo useradd -d /opt/sharppaste -r xsp`
+- Fix permissions: `sudo chmod -R xsp:xsp /opt/sharppaste`
+- Copy `sharppaste.service` to systemd's services directory: `sudo cp /opt/sharppaste/Scripts/sharppaste.service /etc/systemd/system/sharppaste.service`
+- Reload systemd services: `sudo systemctl daemon-reload`
+- Enable SharpPaste service (to let it start st system's startup): `sudo systemctl enable`
+- Start SharpPaste service: `sudo service sharppaste start`
+- Enjoy! 😜🔥
 ## Specifics
 
 ### Software Used
