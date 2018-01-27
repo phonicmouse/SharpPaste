@@ -1,4 +1,4 @@
-﻿@Master['master.sshtml']
+@Master['master.sshtml']
 @Section['Scripts']
     <!-- Crypto Libraries -->
     <script src="/js/lib/pwgen.js"></script>
@@ -194,5 +194,6 @@ SharpPaste
             </div>
         </div>
     </div>
+    @Partial['footer']
 </div>
 @EndSection

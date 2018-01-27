@@ -22,6 +22,7 @@
     </div>
     <pre id="codeblock" hidden><code class="line-numbers language-@Model.Language" id="body"></code></pre>
     <!--<a class="btn btn-link center-block" id="view-raw" href="/raw/">View Raw</a>-->
+    @Partial['footer']
   </div>
 
 @EndSection
