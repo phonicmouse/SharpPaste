@@ -19,6 +19,7 @@ Cross-platform C# pastebin with client-side AES-256 encryption that just works, 
 * Prism - Syntax Highlighter
 
 ## Installation
+Please see the [readme-update branch](https://github.com/phonicmouse/SharpPaste/blob/readme-update/README.md) for the new installation docs. __[Work in Progress]__
 
 ### Linux/Mac OS X
 **Dependencies:**
