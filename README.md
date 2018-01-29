@@ -33,8 +33,8 @@ Or install by *hand*:
   - Ubuntu, Debian and Raspbian: `sudo apt install -y mono-xsp nuget`
   - CentOS: `sudo yum install -y xsp nuget`
 - Download latest release:
-  - From our website `wget https://get.sharppaste.nl/latest.tar.gz`
-  - Or, from our [releases page](https://github.com/phonicmouse/SharpPaste/releases) (be sure to download the file called latest.tar.gz)
+  - From our website `wget https://get.sharppaste.nl/latest.tar.gz`[**TODO**]
+  - Or, from our [releases page](https://github.com/phonicmouse/SharpPaste/releases) (be sure to download the latest .tar.gz file)
 - Extract archive to `/opt`: `tar -xvf latest.tar.gz -C /opt/sharppaste`
 - Enter app's directory: `cd /opt/sharppaste`
 - Download nuget packages: `nuget restore`
