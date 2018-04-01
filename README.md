@@ -6,42 +6,65 @@
 
 Cross-platform C# pastebin with client-side AES-256 encryption that just works, made with :heart: in Italy :it:.
 
-## Software Used
-* Mono - C# Cross-Platform Compiler
-* NancyFX - Open Source Web Framework
-* LiteDB - Embedded Database
-* [Strong PwGen](https://gist.github.com/jacobbuck/4247179) - Strong key generator
-* Scrypt.js - Key hashing algorithm (used for AES256 keys)
-* AES-JS - Library to encrypt data using AES directly in your browser
-* Bootstrap - UI Framework
-* Bootstrap Flat Theme - UI Theme
-* jQuery - DOM Framework
-* Prism - Syntax Highlighter
 
 ## Installation
 Please see the [readme-update branch](https://github.com/phonicmouse/SharpPaste/blob/readme-update/README.md) for the new installation docs. __[Work in Progress]__
 
-### Linux/Mac OS X
+### Linux
 **Dependencies:**
-* Mono (see [Supported Mono Versions](#supported-mono-versions) for a full list of supported versions)
-* XSP ( [latest](https://github.com/mono/xsp) version should be fine)
+- Mono Runtime (see [Supported Mono Versions](#supported-mono-versions) for a full list of supported versions)
+- Nuget (to automatically download all required C# dependencies)
+- XSP4 (see [hosting asp.net with xsp](http://www.mono-project.com/docs/web/aspnet/#aspnet-hosting-with-xsp) for more details)
 
 
 **Instructions:**
-1. Install ```mono``` ([Linux](http://www.mono-project.com/docs/getting-started/install/linux/) or [OS X](http://www.mono-project.com/docs/getting-started/install/mac/))
-2. Install [```xsp```](https://github.com/mono/xsp/blob/master/INSTALL)
-3. Install ```nuget```
-4. Clone SharpPaste repository ```git clone https://github.com/phonicmouse/SharpPaste.git```
-5. Enter repo's directory ```cd SharpPaste```
-6. Restore packages ```nuget restore```
-7. Build Solution ```xbuild SharpPaste.sln```
-8. Start [XSP Web Server](http://www.mono-project.com/docs/web/aspnet/#aspnet-hosting-with-xsp) ```xsp``` or ```xsp4``` if you get errors with the first one
-9. Done. Enjoy! :stuck_out_tongue_winking_eye:
 
+Use our simple one-liner installer (currently supports Ubuntu, Debian, Raspbian and CentOS)[**TODO**]:
+```
+curl https://get.sharppaste.nl | bash
+```
 
+Or install by *hand*:
+- Add Mono repositories for your distro:
+  - [Ubuntu](http://www.mono-project.com/download/#download-lin-ubuntu)
+  - [Debian](http://www.mono-project.com/download/#download-lin-debian)
+  - [Raspbian](http://www.mono-project.com/download/#download-lin-raspbian)
+  - [Centos](http://www.mono-project.com/download/#download-lin-centos)
+- Install required packages:
+  - Ubuntu, Debian and Raspbian: `sudo apt install -y mono-xsp nuget`
+  - CentOS: `sudo yum install -y xsp nuget`
+- Download latest release:
+  - From our website `wget https://get.sharppaste.nl/latest.tar.gz`[**TODO**]
+  - Or, from our [releases page](https://github.com/phonicmouse/SharpPaste/releases) (be sure to download the latest .tar.gz file)
+- Extract archive to `/opt`: `tar -xvf latest.tar.gz -C /opt/sharppaste`
+- Enter app's directory: `cd /opt/sharppaste`
+- Download nuget packages: `nuget restore`
+- Build app: `msbuild`
+- Create database directory: `mkdir -p /opt/sharppaste/Databases`
+- Test app by running `xsp` and then check by opening http://127.0.0.1:9000 in your browser if everything works
+- Add xsp user to run it in background: `sudo useradd -d /opt/sharppaste -r xsp`
+- Fix permissions: `sudo chmod -R xsp:xsp /opt/sharppaste`
+- Copy `sharppaste.service` to systemd's services directory: `sudo cp /opt/sharppaste/Scripts/sharppaste.service /etc/systemd/system/sharppaste.service`
+- Reload systemd services: `sudo systemctl daemon-reload`
+- Enable SharpPaste service (to let it start st system's startup): `sudo systemctl enable`
+- Start SharpPaste service: `sudo service sharppaste start`
+- Enjoy! 😜🔥
 ## Specifics
 
-#### Supported Mono Versions
+### Software Used
+
+- Mono - C# Cross-Platform Compiler
+- NancyFX - Open Source Web Framework
+- LiteDB - Embedded Database
+- [Strong PwGen](https://gist.github.com/jacobbuck/4247179) - Strong key generator
+- Scrypt.js - Key hashing algorithm (used for AES256 keys)
+- AES-JS - Library to encrypt data using AES directly in your browser
+- Bootstrap 3 - UI Framework
+- Bootstrap Flat Theme - UI Theme
+- jQuery - DOM Framework
+- Prism - Syntax Highlighter
+
+### Supported Mono Versions
 
 | Version        | Supported          |
 |:--------------:|:------------------:|
@@ -62,5 +85,5 @@ Please see the [readme-update branch](https://github.com/phonicmouse/SharpPaste/
 See [Travis CI](https://travis-ci.org/phonicmouse/SharpPaste) for more details.
 
 
-## License
+### License
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fphonicmouse%2FSharpPaste.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fphonicmouse%2FSharpPaste?ref=badge_large)
