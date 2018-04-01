@@ -1,9 +1,11 @@
 using Nancy;
+using Nancy.TinyIoc;
 using Nancy.Conventions;
+using Nancy.Diagnostics;
+using Nancy.Bootstrapper;
+using Nancy.Configuration;
 using System.Configuration;
 using System.Linq;
-using Nancy.Bootstrapper;
-using Nancy.TinyIoc;
 
 namespace SharpPaste
 {
