@@ -3,7 +3,6 @@ using Nancy.TinyIoc;
 using Nancy.Conventions;
 using Nancy.Diagnostics;
 using Nancy.Bootstrapper;
-using Nancy.Configuration;
 using System.Configuration;
 using System.Linq;
 
@@ -11,12 +10,11 @@ namespace SharpPaste
 {
 	public class Bootstrapper : DefaultNancyBootstrapper
 	{
-	        public override void Configure(INancyEnvironment environment)
-                {
-                        environment.Diagnostics(true, "CHANGEME");
-                        base.Configure(environment);
-                }
-                protected override void ConfigureConventions(NancyConventions nancyConventions)
+        protected override DiagnosticsConfiguration DiagnosticsConfiguration
+        {
+            get { return new DiagnosticsConfiguration { Password = "CHANGEME" }; }
+        }
+        protected override void ConfigureConventions(NancyConventions nancyConventions)
 		{
                         nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddFile("/css/bootstrap.css", @"packages\bootstrap.3.3.7\content\Content\bootstrap.min.css"));
 	                nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddFile("/css/bootstrap.min.css.map", @"packages\bootstrap.3.3.7\content\Content\bootstrap.min.css.map"));
