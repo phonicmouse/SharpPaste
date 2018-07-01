@@ -18,7 +18,7 @@ namespace SharpPaste
             {
                 using (var db = new LiteDatabase(Config.DBPATH))
                 {
-                    var collection = db.GetCollection<Paste>("pastes");
+                    var collection = db.GetCollection<Paste>("Pastes");
                     var paste = collection.FindOne(Query.EQ("LongId", parameters.longId.ToString()));
                     if (paste == null) return HttpStatusCode.NotFound;
                     return View["paste", paste];
@@ -29,7 +29,7 @@ namespace SharpPaste
             {
                 using (var db = new LiteDatabase(Config.DBPATH))
                 {
-                    var collection = db.GetCollection<Paste>("pastes");
+                    var collection = db.GetCollection<Paste>("Pastes");
                     var paste = collection.FindOne(Query.EQ("LongId", parameters.longId.ToString()));
                     if (paste == null) return HttpStatusCode.NotFound;
                     return JsonConvert.SerializeObject(paste);
@@ -42,7 +42,7 @@ namespace SharpPaste
             
                 using (var db = new LiteDatabase(Config.DBPATH))
                 {
-                    var result = db.GetCollection<Paste>("pastes").FindOne(Query.EQ("LongId", longId));
+                    var result = db.GetCollection<Paste>("Pastes").FindOne(Query.EQ("LongId", longId));
             
                     return result.Body;
                 }
@@ -62,7 +62,7 @@ namespace SharpPaste
                 {
                     using (var db = new LiteDatabase(Config.DBPATH))
                     {
-                        var pastes = db.GetCollection<Paste>("pastes");
+                        var pastes = db.GetCollection<Paste>("Pastes");
 
                         string hashSeed = pastes.Count().ToString() + jsonPaste.Date.ToString() + jsonPaste.Title + jsonPaste.Body + jsonPaste.Language;
                         string longId = Multibase.Base64.Encode(HexUtils.toByteArray(SHA.ComputeSHA256Hash(hashSeed)), false, true);
@@ -97,7 +97,8 @@ namespace SharpPaste
                 }
             };
 
-            Post["/event"] = parameters => {
+            Post["/event"] = parameters => 
+            {
                 var body = Request.Body;
                 var length = (int)body.Length;
                 var data = new byte[length];
@@ -105,6 +106,24 @@ namespace SharpPaste
                 body.Read(data, 0, length);
 
                 var jsonEvent = JsonConvert.DeserializeObject<Event>(Encoding.Default.GetString(data));
+
+                using (var db = new LiteDatabase(Config.ANALYTICSDBPATH))
+                {
+                    var events = db.GetCollection<Event>("Events");
+
+                    string hashSeed = events.Count().ToString() + jsonEvent.Timestamp.ToString() + jsonEvent.Name + jsonEvent.Data;
+                    string longId = Multibase.Base64.Encode(HexUtils.toByteArray(SHA.ComputeSHA256Hash(hashSeed)), false, true);
+
+                    var newEvent = new Event
+                    {
+                        LongId = longId,
+                        Timestamp = DateTime.Now,
+                        Name = jsonEvent.Name,
+                        Data = jsonEvent.Data
+                    };
+                }
+
+                return "SUCCESS";
             };
         }
     }

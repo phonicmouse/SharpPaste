@@ -109,6 +109,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HexUtils.cs" />
+    <Compile Include="Models\EventModel.cs" />
     <Compile Include="Models\UploadResponseModel.cs" />
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="Config.cs" />
