@@ -45,8 +45,9 @@ Please see the [readme-update branch](https://github.com/phonicmouse/SharpPaste/
 
 | Version        | Supported          |
 |:--------------:|:------------------:|
-| latest (5.8.0) | :white_check_mark: |
-| 5.8.0          | :white_check_mark: |
+| latest         | :white_check_mark: |
+| 5.12.0         | :white_check_mark: |
+| 5.8.1          | :white_check_mark: |
 | 5.4.1          | :white_check_mark: |
 | 5.2.0          | :white_check_mark: |
 | 5.0.1          | :white_check_mark: |
