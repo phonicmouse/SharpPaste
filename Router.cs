@@ -96,6 +96,16 @@ namespace SharpPaste
                     return JsonConvert.SerializeObject(res);
                 }
             };
+
+            Post["/event"] = parameters => {
+                var body = Request.Body;
+                var length = (int)body.Length;
+                var data = new byte[length];
+
+                body.Read(data, 0, length);
+
+                var jsonEvent = JsonConvert.DeserializeObject<Event>(Encoding.Default.GetString(data));
+            };
         }
     }
 }
