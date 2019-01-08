@@ -13,7 +13,7 @@ Cross-platform C# pastebin with client-side AES-256 encryption that just works, 
 **Dependencies:**
 - Mono Runtime (see [Supported Mono Versions](#supported-mono-versions) for a full list of supported versions)
 - Nuget (to automatically download all required C# dependencies)
-- XSP4 (see [hosting asp.net with xsp](http://www.mono-project.com/docs/web/aspnet/#aspnet-hosting-with-xsp) for more details)
+- XSP4 (see [ASP.NET hosting with XSP](http://www.mono-project.com/docs/web/aspnet/#aspnet-hosting-with-xsp) for more details)
 
 
 **Instructions:**
