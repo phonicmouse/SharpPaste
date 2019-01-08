@@ -45,8 +45,8 @@ Or install by *hand*:
 - Fix permissions: `sudo chmod -R xsp:xsp /opt/sharppaste`
 - Copy `sharppaste.service` to systemd's services directory: `sudo cp /opt/sharppaste/Scripts/sharppaste.service /etc/systemd/system/sharppaste.service`
 - Reload systemd services: `sudo systemctl daemon-reload`
-- Enable SharpPaste service (to let it start st system's startup): `sudo systemctl enable`
-- Start SharpPaste service: `sudo service sharppaste start`
+- Enable SharpPaste service (to start it at system's startup): `sudo systemctl enable sharppaste.service`
+- Start SharpPaste service: `sudo systemctl start sharppaste`
 - Enjoy! 😜🔥
 ## Specifics
 
