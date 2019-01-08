@@ -36,7 +36,7 @@ Or install by *hand*:
   - From our website `wget https://get.sharppaste.nl/latest.tar.gz`[**TODO**]
   - Or, from our [releases page](https://github.com/phonicmouse/SharpPaste/releases) (be sure to download the latest .tar.gz file)
 - Extract archive to `/opt`: `tar -xvf latest.tar.gz -C /opt/sharppaste`
-- Enter app's directory: `cd /opt/sharppaste`
+- Go to app's directory: `cd /opt/sharppaste`
 - Download nuget packages: `nuget restore`
 - Build app: `msbuild`
 - Create database directory: `mkdir -p /opt/sharppaste/Databases`
