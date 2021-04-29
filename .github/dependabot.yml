@@ -1,0 +1,16 @@
+version: 2
+updates:
+- package-ecosystem: nuget
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "09:00"
+    timezone: Europe/Rome
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: jQuery
+    versions:
+    - 3.5.1
+  - dependency-name: Newtonsoft.Json
+    versions:
+    - 12.0.3
